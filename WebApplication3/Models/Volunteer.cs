@@ -14,8 +14,8 @@ namespace WebApplication3.Models
             Interpreter,
             Doctor,
             Nurse
-
         }
+
         public string FirstName { get; set; }
         public int LastName { get; set; }
         public string City { get; set; }
