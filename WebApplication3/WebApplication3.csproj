@@ -211,7 +211,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NonClinical.cs" />
     <Compile Include="Models\Nurse.cs" />
-    <Compile Include="Models\Referal.cs" />
+    <Compile Include="Models\Referral.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Surgeon.cs" />
     <Compile Include="Models\Volunteer.cs" />
