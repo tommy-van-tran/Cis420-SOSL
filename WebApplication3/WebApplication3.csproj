@@ -220,6 +220,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Border.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -227,7 +228,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pictures\Facebooklogo.png" />
+    <Content Include="Pictures\SOS Collage.jpg" />
+    <Content Include="Pictures\SOS Pic.jpg" />
     <Content Include="Pictures\SOSLogo.jpg" />
+    <Content Include="Pictures\SOSShirtPic.jpg" />
     <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
