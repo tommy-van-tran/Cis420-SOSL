@@ -237,6 +237,7 @@
     <Content Include="Pictures\SOSLogo.jpg" />
     <Content Include="Pictures\SOSShirtPic.jpg" />
     <Content Include="Pictures\twitterLogo.png" />
+    <Content Include="Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
