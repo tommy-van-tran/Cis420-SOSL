@@ -3,26 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Sample Program</title>
+    <title>@ViewBag.Title - SOS Louisville</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-        <a class="navbar-brand" href="#">My Sample Program</a>
+        <img class="navbar-brand" src="~/Pictures/SosLouTranspar.png" width="150" height="60" />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="~/Home">Home <span class="sr-only">(current)</span></a>
+
+                <li class="dropdown">
+                    <a class="nav-link" href="~/Home/About"> <span style="color:white">About</span> <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-content">
+                        <a href="~/Home/Staff">Staff</a>
+                        <a href="~/Home/BoardOfDirectors">Board of Directors</a>
+                    </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="~/Home/About">About</a>
-                </li>
+
                 <li class="nav-item active">
                     <a class="nav-link" href="~/GetInvolved/GetInvolved">Get Involved</a>
                 </li>
@@ -39,12 +42,54 @@
                     <a class="nav-link" href="~/Account/Register">Register</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <img src="~/Pictures/twitterLogo.png" width="60" height="60" onclick="window.open('https://twitter.com/soslouisville?lang=en')" style="cursor:pointer" /><img />
+            <img src="~/Pictures/Facebooklogo.png" width="60" height="60" onclick="window.open('https://www.facebook.com/SurgeryonSundayLouisville/')" style="cursor:pointer"/><img />
+
         </div>
     </nav>
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
 
     <div class="container body-content">
         @RenderBody()

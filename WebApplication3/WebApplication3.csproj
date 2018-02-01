@@ -190,7 +190,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -221,25 +220,46 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Border.css" />
+    <Content Include="BOD Pics\BODSamSOSPic.png" />
+    <Content Include="BOD Pics\ClairSOSPic.png" />
+    <Content Include="BOD Pics\DanielSOSPic.png" />
+    <Content Include="BOD Pics\DennisSOSPic.png" />
+    <Content Include="BOD Pics\DorothySOSPic.png" />
+    <Content Include="BOD Pics\EllenSOSPic.png" />
+    <Content Include="BOD Pics\PhillipSOSPic.png" />
+    <Content Include="BOD Pics\PhyllisSOSPic.png" />
+    <Content Include="BOD Pics\s9vDKLPt.tif" />
+    <Content Include="BOD Pics\ShawnSOSPic.png" />
+    <Content Include="BOD Pics\SherriSOSPic.png" />
+    <Content Include="BOD Pics\VirginiaSOSPic.png" />
+    <Content Include="Custom_CSS_Styles\Border.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Custom_CSS_Styles\Form Style.css" />
+    <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\1.jpg" />
+    <Content Include="Pictures\BeatrizSOS.jpeg" />
+    <Content Include="Pictures\Collage.png" />
+    <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
+    <Content Include="Pictures\JordanSOS.jpg" />
+    <Content Include="Pictures\SamSOS.png" />
     <Content Include="Pictures\SOS Collage.jpg" />
     <Content Include="Pictures\SOS Pic.jpg" />
     <Content Include="Pictures\SOSLogo.jpg" />
+    <Content Include="Pictures\SosLouTranspar.png" />
     <Content Include="Pictures\SOSShirtPic.jpg" />
     <Content Include="Pictures\twitterLogo.png" />
+    <Content Include="Custom_CSS_Styles\Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\SOSL-Eligability-Criteria-Criteria-Only-W-2.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -291,10 +311,12 @@
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
     <Content Include="Views\GetInvolved\GetInvolved.cshtml" />
-    <Content Include="Views\GetHelp\GetHelp.cshtml" />
+    <Content Include="Views\Home\Staff.cshtml" />
+    <Content Include="Views\Home\BoardOfDirectors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Staff\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
