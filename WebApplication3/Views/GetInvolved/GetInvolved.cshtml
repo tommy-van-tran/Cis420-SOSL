@@ -11,454 +11,164 @@
 <br />
 <p><br />We are always looking for clinical and non-clinical volunteers who are as passionate about care as we are. If you are interested in serving with us, please click on the appropriate link below. Please note that for clinical volunteers, credentialing takes approximately 30 days to process.</p>
 
+ <!-- Main form -->
+<div class="grid-50 tablet-grid-50 mobile-grid-100">
+    <div class="infoCard formPanel campaignInfo">
+        <form class="simple_form new_registration" id="new_registration" enctype="multipart/form-data" action="/public/registrations" accept-charset="UTF-8" method="post">
+            <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WepQ+66Nt1D7WsXG6m4SRF3qKaCYZTlWCBNeqMGdeR7yjmUOYAsmZeDkLvwR/TR2wVtloNJj7v4sCTpHwj5h+A==" />
 
+            <h2 id="registration_form_heading"></h2>
 
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
- <!--<![endif]-->
-
-<html>
-<head>
-    <meta charset="utf-8">
-    <script type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "errorBeacon": "bam.nr-data.net", "licenseKey": "d5a0a41421", "applicationID": "2328010", "transactionName": "IQkNFxZfVVgERBgTQAAKCgBLQlxTCEVDEVQWDwwNFx9XURY=", "queueTime": 0, "applicationTime": 113, "agent": "" }</script>
-    <script type="text/javascript">window.NREUM || (NREUM = {}), __nr_require = function (e, t, n) { function r(n) { if (!t[n]) { var o = t[n] = { exports: {} }; e[n][0].call(o.exports, function (t) { var o = e[n][1][t]; return r(o || t) }, o, o.exports) } return t[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < n.length; o++)r(n[o]); return r }({ 1: [function (e, t, n) { function r() { } function o(e, t, n) { return function () { return i(e, [f.now()].concat(u(arguments)), t ? null : this, n), t ? void 0 : this } } var i = e("handle"), a = e(2), u = e(3), c = e("ee").get("tracer"), f = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], d = "api-", l = d + "ixn-"; a(p, function (e, t) { s[t] = o(d + t, !0, "api") }), s.addPageAction = o(d + "addPageAction", !0), s.setCurrentRouteName = o(d + "routeName", !0), t.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, t) { var n = {}, r = this, o = "function" == typeof t; return i(l + "tracer", [f.now(), e, n], r), function () { if (c.emit((o ? "" : "no-") + "fn-start", [f.now(), r, o], n), o) try { return t.apply(this, arguments) } catch (e) { throw c.emit("fn-err", [arguments, this, e], n), e } finally { c.emit("fn-end", [f.now()], n) } } } }; a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, t) { m[t] = o(l + t) }), newrelic.noticeError = function (e) { "string" == typeof e && (e = new Error(e)), i("err", [e, f.now()]) } }, {}], 2: [function (e, t, n) { function r(e, t) { var n = [], r = "", i = 0; for (r in e) o.call(e, r) && (n[i] = t(r, e[r]), i += 1); return n } var o = Object.prototype.hasOwnProperty; t.exports = r }, {}], 3: [function (e, t, n) { function r(e, t, n) { t || (t = 0), "undefined" == typeof n && (n = e ? e.length : 0); for (var r = -1, o = n - t || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = e[t + r]; return i } t.exports = r }, {}], 4: [function (e, t, n) { t.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, t, n) { function r() { } function o(e) { function t(e) { return e && e instanceof r ? e : e ? c(e, u, i) : i() } function n(n, r, o, i) { if (!d.aborted || i) { e && e(n, r, o); for (var a = t(o), u = m(n), c = u.length, f = 0; f < c; f++)u[f].apply(a, r); var p = s[y[n]]; return p && p.push([b, n, r, a]), a } } function l(e, t) { v[e] = m(e).concat(t) } function m(e) { return v[e] || [] } function w(e) { return p[e] = p[e] || o(n) } function g(e, t) { f(e, function (e, n) { t = t || "feature", y[n] = t, t in s || (s[t] = []) }) } var v = {}, y = {}, b = { on: l, emit: n, get: w, listeners: m, context: t, buffer: g, abort: a, aborted: !1 }; return b } function i() { return new r } function a() { (s.api || s.feature) && (d.aborted = !0, s = d.backlog = {}) } var u = "nr@context", c = e("gos"), f = e(2), s = {}, p = {}, d = t.exports = o(); d.backlog = s }, {}], gos: [function (e, t, n) { function r(e, t, n) { if (o.call(e, t)) return e[t]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return e[t] = r, r } var o = Object.prototype.hasOwnProperty; t.exports = r }, {}], handle: [function (e, t, n) { function r(e, t, n, r) { o.buffer([e], r), o.emit(e, t, n) } var o = e("ee").get("handle"); t.exports = r, r.ee = o }, {}], id: [function (e, t, n) { function r(e) { var t = typeof e; return !e || "object" !== t && "function" !== t ? -1 : e === window ? 0 : a(e, i, function () { return o++ }) } var o = 1, i = "nr@id", a = e("gos"); t.exports = r }, {}], loader: [function (e, t, n) { function r() { if (!x++) { var e = h.info = NREUM.info, t = d.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && t)) return s.abort(); f(y, function (t, n) { e[t] || (e[t] = n) }), c("mark", ["onload", a() + h.offset], null, "api"); var n = d.createElement("script"); n.src = "https://" + e.agent, t.parentNode.insertBefore(n, t) } } function o() { "complete" === d.readyState && i() } function i() { c("mark", ["domContent", a() + h.offset], null, "api") } function a() { return E.exists && performance.now ? Math.round(performance.now()) : (u = Math.max((new Date).getTime(), u)) - h.offset } var u = (new Date).getTime(), c = e("handle"), f = e(2), s = e("ee"), p = window, d = p.document, l = "addEventListener", m = "attachEvent", w = p.XMLHttpRequest, g = w && w.prototype; NREUM.o = { ST: setTimeout, SI: p.setImmediate, CT: clearTimeout, XHR: w, REQ: p.Request, EV: p.Event, PR: p.Promise, MO: p.MutationObserver }; var v = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1071.min.js" }, b = w && g && g[l] && !/CriOS/.test(navigator.userAgent), h = t.exports = { offset: u, now: a, origin: v, features: {}, xhrWrappable: b }; e(1), d[l] ? (d[l]("DOMContentLoaded", i, !1), p[l]("load", r, !1)) : (d[m]("onreadystatechange", o), p[m]("onload", r)), c("mark", ["firstbyte", u], null, "api"); var x = 0, E = e(4) }, {}] }, {}, ["loader"]);</script>
-    <meta name="viewport" content="width=device-width">
-    <title>Surgery on Sunday Louisville   | Kindful</title>
-    <link rel='shortcut icon' href='/assets/favicon.ico?v=20151111' />
-
-    <script src="/assets/application_head-bcb1c21424536c81c9550d4a8a6c34ae78bb8526b37ab1089b41a169d34e2f21.js"></script>
-
-    <link rel="stylesheet" media="screen" href="/assets/app_bootstrap-8006be44dbb1585f8f0541266c6419e3ee20e68bf52509d4c4b2642274f6efd8.css" />
-    <script src="/assets/public-8667329ed841b09d86abb7289c92ea2e80fa5d348fee7e2237ce8466aa45cade.js"></script>
-
-
-    <meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token" content="/Yzo92aTarMqdTReJEMBNAVyllzJymO5g08JmxYMiZW7lmQkmekgukyVPEVG7cMwewU4xbi+H4Vn0ArGAqfSVQ==" />
-    <link rel="stylesheet" media="all" href="/assets/public-285af975861aaa0bc6ea38b0ef0453cf368a5ea30a2125ebb87c9f6f9e7e91ca.css" />
-    <script src="https://js.stripe.com/v3/"></script>
-
-
-
-
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" media="all" href="/stylesheets/ie-old.css" />
-    <![endif]-->
-    <!--[if gte IE 9]>
-      <link rel="stylesheet" media="all" href="/assets/ie9-ae904b5153c6a6ff1ca411cbecdf310819535f4e1d447ba3bf85a11c7eaec133.css" />
-    <![endif]-->
-
-    <meta property="og:title" content="Surgery on Sunday Louisville - Non-Clinical General Volunteer Form" />
-    <meta property="og:site_name" content="Kindful.com" />
-    <meta property="og:image" content="https://assets-kindful-com.s3.amazonaws.com/uploads/registration_form/header_image/9e4849a1-21c4-493a-9a8d-36f738172fc0/standard_Volunteer.jpg?AWSAccessKeyId=AKIAJDYHWVU4NFT74ADA&amp;Signature=%2BlgM9AqqU7PY/DvogCfSUh6wYZc%3D&amp;Expires=1548705489" />
-    <meta property="og:url" content="https://soslouisville.kindful.com/register/non-clinical-general-volunteer-form-2018" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="This volunteer form is for all individuals who wish to volunteer with SOSL in a non-clinical fashion, or for undergraduate and medical students who wish to shadow our clinical operations. " />
-    <meta property="og:updated_time" content="1516761846" />
-
-</head>
-<body class="public_registrations new  theme-default main-menu-animated" style="">
-    <!--[if lte IE 8]>
-    <style>
-      input {
-        font-family: Arial;
-      }
-    </style>
-    <![endif]-->
-
-    <script>var init = [];</script>
-    <div class='outer-wrapper'>
-        <div id="main-wrapper" class='full-width'>
-
-            <div id="header" class="public">
-                <div class="inner-content clearfix">
-                    <div class="pull-left logo">
-                        <div>
-
-                            <div id="organization-title" class="logo-true">Surgery on Sunday Louisville</div>
-                        </div>
-                    </div>
-                    <div id="account-user-session-container">
-                        <span class='right-header-link'>
-                            <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
-                            <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
-                        </span>
-                    </div>
-
-                </div>
+            <div id="error_explanation">
+                <ul></ul>
             </div>
 
-            <div class='notices-wrapper'>
-                <div class="notices ">
+            <input type="hidden" value="976f3995-43f5-4496-b0cb-0a3fdb2258ec" name="registration[registration_form_id]" id="registration_registration_form_id" />
 
-                </div>
-                <div class="errors ">
-                </div>
-                <div class="alerts ">
-                </div>
+
+            <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
+
+
+
+            <label>First Name</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
             </div>
 
-            <div id="content-wrapper" class='public'>
 
-                <div class="grid-container">
-                    <!-- Billboard Image -->
-                    <div class="grid-100">
-                        <div class="billboard ">
-                            <div class="orgInfo">
-                                <h2>Surgery on Sunday Louisville</h2>
-                            </div><!-- .orgInfo -->
 
-                            <img class="header_image" alt="Non-Clinical General Volunteer Form" src="https://assets-kindful-com.s3.amazonaws.com/uploads/registration_form/header_image/9e4849a1-21c4-493a-9a8d-36f738172fc0/standard_Volunteer.jpg?AWSAccessKeyId=AKIAJDYHWVU4NFT74ADA&amp;Signature=%2BlgM9AqqU7PY/DvogCfSUh6wYZc%3D&amp;Expires=1548705489" />
-                        </div><!-- .billboard -->
-                    </div>
-
-                    <div class="grid-100 clearfix">
-                        <h1 id="registration_form_title">Non-Clinical General Volunteer Form</h1>
-                    </div>
-
-                    <!-- Main form -->
-                    <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                        <div class="infoCard formPanel campaignInfo">
-                            <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
-                                <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="eFp03qGelN8OM3OJRdtYTO81IIzc1TO+Mq0IPKrlAYM+QPgNXuTe1mjTe5IndZpIkUKOFa2hT4LWMgthvk5aQw==" />
-
-                                <h2 id="registration_form_heading"></h2>
-
-                                <div id="error_explanation">
-                                    <ul></ul>
-                                </div>
-
-                                <input type="hidden" value="9e4849a1-21c4-493a-9a8d-36f738172fc0" name="registration[registration_form_id]" id="registration_registration_form_id" />
-
-
-                                <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="1000" aria-required="true" type="email" size="1000" value="" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_address"><label class="string required control-label" for="registration_person_attributes_address"><abbr title="required">*</abbr> Address</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_address" name="registration[person_attributes][address]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_city"><label class="string required control-label" for="registration_person_attributes_city"><abbr title="required">*</abbr> City</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_city" name="registration[person_attributes][city]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_state"><label class="string required control-label" for="registration_person_attributes_state"><abbr title="required">*</abbr> State</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_state" name="registration[person_attributes][state]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_postal_code"><label class="string required control-label" for="registration_person_attributes_postal_code"><abbr title="required">*</abbr> Postal Code</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_postal_code" name="registration[person_attributes][postal_code]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group tel required registration_person_mobile_phone"><label class="tel required control-label" for="registration_person_attributes_mobile_phone"><abbr title="required">*</abbr> Mobile Phone</label><div class="controls"><input required="required" class="string tel required " id="registration_person_attributes_mobile_phone" name="registration[person_attributes][mobile_phone]" maxlength="1000" aria-required="true" type="tel" size="1000" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_birthday"><label class="string required control-label" for="registration_person_attributes_birthday"><abbr title="required">*</abbr> Birthday</label><div class="controls"><input required="required" class="string required datepicker" id="registration_person_attributes_birthday" name="registration[person_attributes][birthday]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string optional registration_person_preferred_name"><label class="string optional control-label" for="registration_person_attributes_preferred_name">Preferred Name</label><div class="controls"><input class="string optional " id="registration_person_attributes_preferred_name" name="registration[person_attributes][preferred_name]" maxlength="1000" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string optional registration_person_employer"><label class="string optional control-label" for="registration_person_attributes_employer">Employer</label><div class="controls"><input class="string optional " id="registration_person_attributes_employer" name="registration[person_attributes][employer]" maxlength="1000" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group select required registration_person_custom_field_answers_12898">
-                                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12898"><abbr title="required">*</abbr> Which best describes you?</label><div class="controls">
-                                            <select required="required" id="registration_person_attributes_custom_field_answers_12898" name="registration[person_attributes][custom_field_answers][12898]" class="select required" aria-required="true">
-                                                <option value="">Select...</option>
-                                                <option value="Undergraduate Student">Undergraduate Student</option>
-                                                <option value="Medical Student (1st-3rd year)">Medical Student (1st-3rd year)</option>
-                                                <option value="Medical Student (4th Year)">Medical Student (4th Year)</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <label>* Which areas are you interested in volunteering in?</label>
-                                    <br />
-
-                                    <input name="registration[person_attributes][custom_field_answers][12896][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12896" name="registration[person_attributes][custom_field_answers][12896][]">
-                                        <option value="Registration">Registration</option>
-                                        <option value="Cleaning">Cleaning</option>
-                                        <option value="Clinical Shadowing">Clinical Shadowing</option>
-                                        <option value="Fundraising">Fundraising</option>
-                                    </select>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group text optional registration_person_custom_field_answers_12897">
-                                        <label class="text optional control-label" for="registration_person_attributes_custom_field_answers_12897">Briefly explain to us why you are interested in serving with SOSL.</label><div class="controls">
-                                            <textarea rows="4" class="text optional " id="registration_person_attributes_custom_field_answers_12897" name="registration[person_attributes][custom_field_answers][12897]" maxlength="1000">
-</textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group select required registration_person_custom_field_answers_12895">
-                                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
-                                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
-                                                <option value="">Select...</option>
-                                                <option value="XS">XS</option>
-                                                <option value="S">S</option>
-                                                <option value="M">M</option>
-                                                <option value="L">L</option>
-                                                <option value="XL">XL</option>
-                                                <option value="XXL">XXL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <input type="submit" name="commit" value="Submit" class="btn btn btn-success btn-lg" data-disable-with="Saving..." />
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Feature image -->
-                    <div class="grid-50 tablet-grid-50 mobile-grid-100">
-
-
-                        <!-- About blurb -->
-                        <div class="infoCard campaignInfo">
-
-                            <section class="textContent" id="registration_form_about">
-                                This volunteer form is for all individuals who wish to volunteer with SOSL in a non-clinical fashion, or for undergraduate and medical students who wish to shadow our clinical operations.<br>
-                            </section>
-
-                        </div><!-- .campaignInfo -->
-
-                    </div>
-                </div><!-- .grid-container -->
+            <label>Last Name</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+
+            <label>Address</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>City</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>State</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>Postal Code</label>
+            <div>
+                <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>Mobile Phone</label>
+            <div>
+                <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+            </div>
+
+            <label>Email</label>
+            <div>
+                <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>Birthday</label>
+            <div>
+                <div><input required maxlength="50" aria-required="true" size="1000" type="date" /></div>
+            </div>
+
+            <label>Medical Specialty</label>
+            <div>
+                <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <div>
+                <label>* What/which state(s) are you licensed to practice in? </label>
+                <br />
+
+                <input name="registration[person_attributes][custom_field_answers][12935][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12935" name="registration[person_attributes][custom_field_answers][12935][]">
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
 
             </div>
-        </div>
-        <div id="dialog"></div>
-        <footer id="footer" class='full-width ' style='display: none;'>
-
-            <div id='footer-wrapper'>
-                <div class='footer-brand clearfix'>
-                    <h5 class="organization-title-small helvetica"><a href="/dashboard">Surgery on Sunday Louisville</a></h5>
-
-                    <div id="powered-by">powered by <a href="https://www.kindful.com/"><img alt="Kindful" src="/assets/kindful-small-c874e16e72e31025afd05d99b17f5af248757eb3a76b612a74f6a15c2e11ba42.png" /></a></div>
-                </div>
 
 
-                <nav class="footer-navigation helvetica clearfix ">
-                    <ul class="unstyled unpadded">
-                        <li class="footer-li"><a href="/users/sign_in">Sign In</a></li>
-                        <li class="footer-li"><a href="/contact">Contact</a></li>
-                        <li class="footer-li"><a href="/refund_policy">Refunds</a></li>
-                        <li class="footer-li"><a href="/privacy_policy">Privacy</a></li>
-                        <li class="footer-li"><a href="/terms_of_use">Terms</a></li>
-                    </ul>
-                </nav>
+
+
+            <label>Professional License Number</label>
+            <div>
+                <div><input required maxlength="1000" aria-required="true" size="500" type="text" /></div>
             </div>
-        </footer>
 
+            <label>Professional Alma Mater</label>
+            <div>
+                <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <label>Graduation Year</label>
+            <div>
+                <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+            </div>
+
+            <br />
+            <p>Please upload an up-to-date CV. We need this for our malpractice insurance. </p>
+
+
+            <div class="control-group file optional registration_person_person_document_file"><label class="file optional control-label required btn file-btn" for="registration_person_attributes_person_documents_attributes_0_file">Document</label><div class="controls"><input accept="application/pdf,.pdf,.doc,.docx" class="file optional required btn file-btn" id="registration_person_attributes_person_documents_attributes_0_file" name="registration[person_attributes][person_documents_attributes][0][file]" type="file" /></div></div>
+            <input id="registration_person_attributes_person_documents_attributes_0_label" name="registration[person_attributes][person_documents_attributes][0][label]" value="Document" type="hidden" />
+
+
+            <input type="submit" name="commit" value="Submit" class="btn btn btn-secondary btn-lg" data-disable-with="Saving..." />
+        </form>
     </div>
-</body>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-
-    })
-
-    var is_touch_device = 'ontouchstart' in document.documentElement;
-
-    if (!is_touch_device) {
-        $(".outer-wrapper").mCustomScrollbar({
-            advanced: {
-                updateOnContentResize: true,
-                autoScrollOnFocus: true
-            },
-            mouseWheelPixels: 10,
-            scrollInertia: 200,
-            theme: "dark-2",
-            contentTouchScroll: true,
-            autoHideScrollbar: true,
-            callbacks: {
-                onReady: function () {
-                    if ($('.mCSB_container').height() <= $('body').height()) {
-                        $('.outer-wrapper').css({ height: '100%' });
-                        $('.mCustomScrollBox').css({ height: '100%' });
-                        $('.mCSB_container').css({ height: '100%' });
-                        $('#main-wrapper').css({ height: '100%' });
-                    }
-
-                    if ($('.mCSB_container').height() > $('body').height()) {
-                        $('.mCustomScrollBox').css({ height: 'inherit' });
-                        $('.mCSB_container').css({ height: 'auto' });
-                        $('#main-wrapper').css({ height: 'auto' });
-                    }
-
-                    if ($('.mCSB_container').height() <= $('#content-wrapper').outerHeight()) {
-                        $('.outer-wrapper').css({ height: '100%' });
-                        $('.mCustomScrollBox').css({ height: $('#content-wrapper').outerHeight() });
-                        $('.mCSB_container').css({ height: $('#content-wrapper').outerHeight() });
-                        $('#main-wrapper').css({ height: $('#content-wrapper').outerHeight() });
-                    }
-                }
-            }
-        });
-    };
-    window.PixelAdmin.start(init);
-</script>
-
-<script type="text/javascript">
-
-    (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-35593798-3', 'kindful.com');
-    ga('send', 'pageview');
-
-
-    ga(function () {
-        document.getElementById("google_analytics_tracking_token").value = ga.getByName("t0").get('trackingId');
-    });
-</script>
-<div id="fb-root"></div>
-<script>
-(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=642429092441928";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    function facebookShare(title, url, image_url, message) {
-        FB.ui({
-            method: 'feed',
-            name: title,
-            link: url,
-            picture: image_url,
-            description: message
-        }, function (response) {
-            if (response && response.post_id) { }
-            else { }
-        });
-    }
-</script>
-
-
-
-</html>
+</div>
