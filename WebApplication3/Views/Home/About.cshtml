@@ -9,7 +9,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<h2 class="w3-center">Come be a part of something truly special!</h2>
+
+<h2 class="w3-center"><b>Come be a part of something truly special!</b></h2>
+<h3 class="w3-center pulsate">
+    <link class="pulsate" rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/Pulsing effect.css" /> <img src="~/Pictures/Collage.png" height="400" width="650" /></h3>
+
+<div style="height:1px; background-color:black; padding-left:5vw; padding-right:5vw "></div><br />
 
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="~/Pictures/SOS Collage.jpg" style="width:100%">
@@ -19,6 +24,7 @@
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
+
 
 <script>
     var slideIndex = 1;
@@ -44,66 +50,49 @@
 <body>
     <link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/Border.css" />
 
-    <div style="display: flex; justify-content: center;">
-        <img src="~/Pictures/SOSLogo.jpg" alt="Logo" width=1000 align="middle" /><img /><br />
-    </div>
-
+    <br /><div style="height:1px; background-color:black; padding-left:5vw; padding-right:5vw "></div><br />
     <p>
         <div style="display: flex; justify-content: center;">
             <br /><iframe width="560" height="315" src="https://www.youtube.com/embed/oePBye4vrnA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="middle"></iframe><br />
 
         </div>
     </p><br />
-    <p>
 
-        <h2 style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
-            <span style="color:red">Surgery On Sunday – Louisville, Inc.</span> provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.  <span style="color:red"><b> Our patients never see a bill.</b></span> We are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.
-        </h2>
+    <p style="padding-left:6vw; padding-right:6vw">
+
+
+        <span style="color:red; font-size:32px">Surgery On Sunday – Louisville, Inc.</span><span style="font-size:20px"> provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.</span>  <span style="color:red; font-size:25px"><b> Our patients never see a bill.</b></span> <span style="font-size:20px"> are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.</span>
+        <br /><div style="height:1px; background-color:black; padding-left:1vw; padding-right:1vw;"></div><br />
     </p>
 
     <h1>
         <div style="display: flex; justify-content: center;">
-            Subscribe to our quarterly mailing list:<br />
+            <b> Subscribe to our quarterly mailing list:</b><br />
         </div>
 
     </h1>
-    <p>
-        <div style="display: flex; justify-content: center; border:3px; border-style:solid; border-color:red; padding:1em;">
-            <table width="1000">
-                <tr>
-                    <td valign="top">
-                        <label for="first_name"><b>First Name *</b></label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="first_name" maxlength="50" size="30">
-                    </td>
-                </tr>
 
-                <tr>
-                    <td valign="top">
-                        <label for="last_name"><b>Last Name *</b></label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="last_name" maxlength="50" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="email"><b>Email Address *</b></label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="email" maxlength="80" size="30">
-                    </td>
+    <form class="form-style-9">
+        <link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/Form Style.css" />
+        <ul>
+            <li>
+                <input type="text" name="field1" class="field-style field-split align-left" placeholder="First Name" />
+            </li>
+            <li>
+                <input type="email" name="field2" class="field-style field-split align-left" placeholder="Last Name" />
+            </li>
+            <li>
+                <input type="text" name="field3" class="field-style field-full align-left" placeholder="Email Address" />
 
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center">
-                        <input type="submit" value="Subscribe">
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </p>
+            </li>
+            <li>
+                <input type="submit" value="Subscribe" class="align-left" />
+                <img src="~/Pictures/SosLouTranspar.png" style="padding-left:12vw" class="align-none" height="250" width="800" />
+            </li>
+        </ul>
+    </form>
+
+    <br /><div style="height:1px; background-color:black; padding-left:1vw; padding-right:1vw;"></div><br />
     <p>
         <h1>
             <div style="display: flex; justify-content: center;">
@@ -114,29 +103,24 @@
         </h1>
 
 
-        <section>
-
-            <img src="~/Pictures/twitterLogo.png" alt="Logo" width=80 height="80" onclick="window.open('https://twitter.com/soslouisville?lang=en')" style="cursor:pointer; position:relative; top:30px; left:470px;" /><img />
-            <img src="~/Pictures/Facebooklogo.png" alt="Logo" width=85 height="85" onclick="window.open('https://www.facebook.com/SurgeryonSundayLouisville/')" style="cursor:pointer; position:relative; top:30px; left:53px;" /><img />
-        </section><br />
-
         <br /><br /> <section>
+            <img src="~/Pictures/twitterLogo.png" alt="Logo" width=80 height="80" onclick="window.open('https://twitter.com/soslouisville?lang=en')" style="cursor:pointer; position:relative; top:0px; left:730px;" /><img />
+            <img src="~/Pictures/Facebooklogo.png" alt="Logo" width=85 height="85" onclick="window.open('https://www.facebook.com/SurgeryonSundayLouisville/')" style="cursor:pointer; position:relative; top:0px; left:200px;" /><img /><br />
 
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSurgeryonSundayLouisville%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe> <!--change position for widget using position:fixed-->
+            <br />
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSurgeryonSundayLouisville%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden; position:relative; left:10vw; top:0vw" scrolling="no" frameborder="0" allowTransparency="true"></iframe> <!--change position for widget using position:fixed-->
 
 
-
-            <a class="twitter-timeline" data-width="340" data-height="515" href="https://twitter.com/soslouisville?ref_src=twsrc%5Etfw">Tweets by soslouisville</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div style="position:relative; top:-34.5vw; left:40vw">
+                <a class="twitter-timeline" data-width="340" data-height="515" href="https://twitter.com/soslouisville?ref_src=twsrc%5Etfw">Tweets by soslouisville</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
 
         </section>
 
 
 
     </p>
-
-
-
 
 
 

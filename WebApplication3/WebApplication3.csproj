@@ -235,11 +235,15 @@
     <Content Include="Custom_CSS_Styles\Border.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Custom_CSS_Styles\Form Style.css" />
+    <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\1.jpg" />
     <Content Include="Pictures\BeatrizSOS.jpeg" />
+    <Content Include="Pictures\Collage.png" />
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
     <Content Include="Pictures\JordanSOS.jpg" />
