@@ -238,6 +238,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Custom_CSS_Styles\Carousel.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
+    <Content Include="Custom_CSS_Styles\inputboxes.css" />
     <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -320,6 +321,11 @@
     <Content Include="Views\Home\Staff.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
+    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
+    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
+    <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
+    <Content Include="Views\GetInvolved\VolunteerCommentForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

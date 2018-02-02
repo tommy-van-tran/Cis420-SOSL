@@ -4,23 +4,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
-<h2 style="color:crimson">Physician Volunteer Form</h2>
+<h2 style="color:crimson;padding-left:5vw; padding-right:5vw">Physician Volunteer Form</h2>
 
-
+<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
 <!-- Main form -->
 
-<div id="account-user-session-container">
+<div id="account-user-session-container" style="padding-left:5vw; padding-right:5vw">
     <span class='right-header-link'>
         <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
         <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
     </span>
     <br />
 
-        <div id="right" style="float:right; width:50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding:1vw">
+        <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
             Surgery on Sunday Louisville independently credentials each of its physician volunteers following the method developed by The Joint Commission. That process requires us to query physician information through the National Practitioner Database, a service provided by the United States Department of Health and Human Services. Completion of this form serves as the agreement of the volunteer to allow Surgery on Sunday Louisville to perform such query. Questions about this process can be directed to info@soslouisville.org.
         </div>
     </div>
-    <div>
+    <div link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
         <label>First Name</label>
         <div>
             <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
@@ -157,12 +157,12 @@
 
 
 
-    <div class="control-group file optional registration_person_person_document_file"><label class="file optional control-label required btn file-btn" for="registration_person_attributes_person_documents_attributes_0_file">Document</label><div class="controls"><input accept="application/pdf,.pdf,.doc,.docx" class="file optional required btn file-btn" id="registration_person_attributes_person_documents_attributes_0_file" name="registration[person_attributes][person_documents_attributes][0][file]" type="file" /></div></div>
+    <div style="padding-left:5vw; padding-right:5vw" class="control-group file optional registration_person_person_document_file" style="padding-left:5vw; padding-right:5vw"><label class="file optional control-label required btn file-btn" for="registration_person_attributes_person_documents_attributes_0_file">Document</label><div class="controls"><input accept="application/pdf,.pdf,.doc,.docx" class="file optional required btn file-btn" id="registration_person_attributes_person_documents_attributes_0_file" name="registration[person_attributes][person_documents_attributes][0][file]" type="file" /></div></div>
     <input id="registration_person_attributes_person_documents_attributes_0_label" name="registration[person_attributes][person_documents_attributes][0][label]" value="Document" type="hidden" />
 
 
 
-    <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
+    <div style="padding-left:5vw; padding-right:5vw"><input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
 </div>
     </div>
 
