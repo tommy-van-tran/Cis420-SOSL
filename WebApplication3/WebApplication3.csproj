@@ -255,6 +255,8 @@
     <Content Include="Pictures\SOSLogo.jpg" />
     <Content Include="Pictures\SosLouTranspar.png" />
     <Content Include="Pictures\SOSShirtPic.jpg" />
+    <Content Include="Pictures\SOSShirtPicUse.png" />
+    <Content Include="Pictures\SOS_white_logo.png" />
     <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Custom_CSS_Styles\Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -320,6 +322,11 @@
     <Content Include="Views\Home\Staff.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
+    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
+    <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
+    <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
+    <Content Include="Views\GetInvolved\VolunteerCommentForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
