@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -235,6 +236,7 @@
     <Content Include="Custom_CSS_Styles\Border.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Custom_CSS_Styles\Carousel.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
     <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
@@ -253,7 +255,6 @@
     <Content Include="Pictures\SOSLogo.jpg" />
     <Content Include="Pictures\SosLouTranspar.png" />
     <Content Include="Pictures\SOSShirtPic.jpg" />
-    <Content Include="Pictures\SOS_white_logo.png" />
     <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Custom_CSS_Styles\Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -261,7 +262,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\SOSL-Eligability-Criteria-Criteria-Only-W-2.pdf" />
+    <Content Include="Content\bootstrapNEW.Min.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Bootstrap.min.NEW.js" />
+    <Content Include="Scripts\bootstrapNEW %281%29.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -314,11 +319,7 @@
     <Content Include="Views\GetInvolved\GetInvolved.cshtml" />
     <Content Include="Views\Home\Staff.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
-    <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
-    <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
-    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
-    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
-    <Content Include="Views\GetInvolved\VolunteerCommentForm.cshtml" />
+    <Content Include="Views\GetHelp\GetHelp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
