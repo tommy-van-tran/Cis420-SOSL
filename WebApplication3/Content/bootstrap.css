@@ -6180,8 +6180,8 @@ button.bg-warning:focus {
     background-color: #e45c00 !important;
 }
 
-.bg-danger {
-    background-color: dimgray !important;
+.bg-danger { /*firebrick*/
+    background-color: firebrick !important;
 }
 
 a.bg-danger:hover, a.bg-danger:focus,

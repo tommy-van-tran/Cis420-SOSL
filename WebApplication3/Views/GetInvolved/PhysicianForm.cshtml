@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "PhysicianForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2 style="color:crimson">Physician Volunteer Form</h2>
+
+
+<!-- Main form -->
+
+<div id="account-user-session-container">
+    <span class='right-header-link'>
+        <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
+        <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
+    </span>
+    <br />
+
+        <div id="right" style="float:right; width:50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding:1vw">
+            Surgery on Sunday Louisville independently credentials each of its physician volunteers following the method developed by The Joint Commission. That process requires us to query physician information through the National Practitioner Database, a service provided by the United States Department of Health and Human Services. Completion of this form serves as the agreement of the volunteer to allow Surgery on Sunday Louisville to perform such query. Questions about this process can be directed to info@soslouisville.org.
+        </div>
+    </div>
+    <div>
+        <label>First Name</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+
+
+        <label>Last Name</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+
+        <label>Address</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>City</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>State</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>Postal Code</label>
+        <div>
+            <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>Mobile Phone</label>
+        <div>
+            <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+        </div>
+
+        <label>Email</label>
+        <div>
+            <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>Birthday</label>
+        <div>
+            <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>Medical Specialty</label>
+        <div>
+            <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <div>
+            <label> What/which state(s) are you licensed to practice in? </label>
+            <br />
+
+        </div>
+        <div style="height:120px;width:120px;border:1px solid #ccc;overflow:auto;">
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AK">Alaska</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AL">Alabama</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AR">Arkansas</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AZ">Arizona</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CA">California</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CO">Colorado</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CT">Connecticut</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DC">District Of Columbia</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DE">Delaware</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="FL">Florida</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="GA">Georgia</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="HI">Hawaii</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IA">Iowa</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ID">Idaho</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IL">Illinois</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IN">Indiana</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KS">Kansas</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KY">Kentucky</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="LA">Louisiana</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MA">Massachusetts</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MD">Maryland</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ME">Maine</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MI">Michigan</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MN">Minnesota</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MO">Missouri</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MS">Mississippi</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MT">Montana</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NC">North Carolina</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ND">North Dakota</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NE">Nebraska</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NH">New Hampshire</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NJ">New Jersey</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NM">New Mexico</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NV">Nevada</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NY">New York</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OH">Ohio</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OK">Oklahoma</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OR">Oregon</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="PA">Pennsylvania</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="RI">Rhode Island</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SC">South Carolina</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SD">South Dakota</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TN">Tennessee</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TX">Texas</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="UT">Utah</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VA">Virginia</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VT">Vermont</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WA">Washington</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WI">Wisconsin</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WV">West Virginia</label></div>
+            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WY">Wyoming</label></div>
+        </div>
+
+
+
+        <label>Professional License Number</label>
+        <div>
+            <div><input required maxlength="1000" aria-required="true" size="500" type="text" /></div>
+        </div>
+
+        <label>Professional Alma Mater</label>
+        <div>
+            <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <label>Graduation Year</label>
+        <div>
+            <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        </div>
+
+        <br />
+        <p>Please upload an up-to-date CV. We need this for our malpractice insurance. </p>
+    </div>
+    </form>
+
+
+
+    <div class="control-group file optional registration_person_person_document_file"><label class="file optional control-label required btn file-btn" for="registration_person_attributes_person_documents_attributes_0_file">Document</label><div class="controls"><input accept="application/pdf,.pdf,.doc,.docx" class="file optional required btn file-btn" id="registration_person_attributes_person_documents_attributes_0_file" name="registration[person_attributes][person_documents_attributes][0][file]" type="file" /></div></div>
+    <input id="registration_person_attributes_person_documents_attributes_0_label" name="registration[person_attributes][person_documents_attributes][0][label]" value="Document" type="hidden" />
+
+
+
+    <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
+</div>
+    </div>
+
+   
+
+
+
