@@ -238,7 +238,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Custom_CSS_Styles\Carousel.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
-    <Content Include="Custom_CSS_Styles\inputboxes.css" />
     <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -249,6 +248,7 @@
     <Content Include="Pictures\Collage.png" />
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
+    <Content Include="Pictures\FacebookWhite.png" />
     <Content Include="Pictures\JordanSOS.jpg" />
     <Content Include="Pictures\SamSOS.png" />
     <Content Include="Pictures\SOS Collage.jpg" />
@@ -256,6 +256,9 @@
     <Content Include="Pictures\SOSLogo.jpg" />
     <Content Include="Pictures\SosLouTranspar.png" />
     <Content Include="Pictures\SOSShirtPic.jpg" />
+    <Content Include="Pictures\SOSShirtPicUse.png" />
+    <Content Include="Pictures\SOS_white_logo.png" />
+    <Content Include="Pictures\TwitterJustBird.png" />
     <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Custom_CSS_Styles\Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -321,8 +324,8 @@
     <Content Include="Views\Home\Staff.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
-    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
     <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
     <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
     <Content Include="Views\GetInvolved\VolunteerCommentForm.cshtml" />
