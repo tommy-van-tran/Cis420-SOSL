@@ -13,5 +13,30 @@ namespace WebApplication3.Controllers
         {
             return View();
         }
+        
+        public ActionResult PhysicianForm()
+        {
+            return View();
+        }
+
+        public ActionResult GeneralForm()
+        {
+            return View();
+        }
+
+        public ActionResult MedicalInterpreterVolunteer()
+        {
+            return View();
+
+        }
+
+        public ActionResult NonPhysicianClinicalForm()
+        {
+            return View();
+        }
+        public ActionResult VolunteerCommentForm()
+        {
+            return View();
+        }
     }
 }
