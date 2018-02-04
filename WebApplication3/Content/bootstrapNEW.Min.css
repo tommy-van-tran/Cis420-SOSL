@@ -4494,14 +4494,14 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar {
     position: relative;
-    min-height: 50px;
+    min-height: 3.5vw;
     margin-bottom: 20px;
     border: 1px solid transparent
 }
 
 @media (min-width:768px) {
     .navbar {
-        border-radius: 4px
+        border-radius: 0
     }
 }
 
