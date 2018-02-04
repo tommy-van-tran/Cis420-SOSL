@@ -330,6 +330,7 @@
     <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
     <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

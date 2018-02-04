@@ -24,7 +24,7 @@ namespace WebApplication3.Controllers
             return View();
         }
 
-        public ActionResult MedicalInterpreterVolunteer()
+        public ActionResult InterpreterForm()
         {
             return View();
 
