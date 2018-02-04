@@ -3,8 +3,8 @@
     ViewBag.Title = "NonPhysicianClinicalForm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2 style="color:crimson">Non-Physician Clinical Volunteer Form</h2>
+<br />
+<h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Physician Clinical Volunteer Form</h2>
 
 
 <!doctype html>
@@ -30,10 +30,8 @@
                     <div class="pull-left logo">
                         <div>
 
-                            <div id="organization-title" class="logo-true">Surgery on Sunday Louisville</div>
-                        </div>
                     </div>
-                    <div id="account-user-session-container">
+                    <div id="account-user-session-container" style="padding-left:5vw; padding-right:5vw">
                         <span class='right-header-link'>
                             <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
                             <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
@@ -57,7 +55,7 @@
 
 
                     <!-- Main form -->
-                    <div class="grid-50 tablet-grid-50 mobile-grid-100" >
+                    <div class="grid-50 tablet-grid-50 mobile-grid-100" link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw" >
                         <div class="infoCard formPanel campaignInfo">
                             <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
                                 <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GZobofcpjjAHk5/hqa7qpOL5CP/jJBGCZAJIQlfz80hnMabCxdoJhMvEHJItpkfPZxoi+XCJ5jpoMnw1MB3x3Q==" />
@@ -74,387 +72,186 @@
                                 <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
 
 
+                                <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
+                                    This particular form is specifically for health care workers who provide direct care to patients, are not physicians, and who have licensed medical certifications e.g. RN’s, CRNA’s, APRN’s, LPN’s, etc or who provide some level of clinical care but are not licensed providers i.e. CNA’s, Scrub Tech’s, etc. All other individuals who work in a healthcare setting, including medical students, but who do not fall into the above two categories should complete the <a link href="~/GetInvolved/GeneralForm">General Non-Clinical Volunteer Form.</a>
+                                </div>
 
+                                <label>First Name</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                </div>
 
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
+                                <label>Last Name</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
                                 </div>
 
 
+                                <label>Address</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                </div>
 
+                                <label>City</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                </div>
 
+                                <label>State</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                </div>
 
+                                <label>Postal Code</label>
+                                <div>
+                                    <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+                                </div>
 
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+                                <label>Mobile Phone</label>
+                                <div>
+                                    <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+                                </div>
 
+                                <label>Email</label>
+                                <div>
+                                    <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+                                </div>
+
+                                <label>Birthday</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
                                 </div>
 
 
-
-
-
-
                                 <div class="control_row">
-                                    <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="1000" aria-required="true" type="email" size="1000" value="" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_address"><label class="string required control-label" for="registration_person_attributes_address"><abbr title="required">*</abbr> Address</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_address" name="registration[person_attributes][address]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_city"><label class="string required control-label" for="registration_person_attributes_city"><abbr title="required">*</abbr> City</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_city" name="registration[person_attributes][city]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_state"><label class="string required control-label" for="registration_person_attributes_state"><abbr title="required">*</abbr> State</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_state" name="registration[person_attributes][state]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_postal_code"><label class="string required control-label" for="registration_person_attributes_postal_code"><abbr title="required">*</abbr> Postal Code</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_postal_code" name="registration[person_attributes][postal_code]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group tel required registration_person_mobile_phone"><label class="tel required control-label" for="registration_person_attributes_mobile_phone"><abbr title="required">*</abbr> Mobile Phone</label><div class="controls"><input required="required" class="string tel required " id="registration_person_attributes_mobile_phone" name="registration[person_attributes][mobile_phone]" maxlength="1000" aria-required="true" type="tel" size="1000" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_birthday"><label class="string required control-label" for="registration_person_attributes_birthday"><abbr title="required">*</abbr> Birthday</label><div class="controls"><input required="required" class="string required datepicker" id="registration_person_attributes_birthday" name="registration[person_attributes][birthday]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string optional registration_person_preferred_name"><label class="string optional control-label" for="registration_person_attributes_preferred_name">Preferred Name</label><div class="controls"><input class="string optional " id="registration_person_attributes_preferred_name" name="registration[person_attributes][preferred_name]" maxlength="1000" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <label>* What is/are your professional title(s)</label>
+                                    <label>What is/are your professional title(s)</label>
                                     <br />
-
-                                    <input name="registration[person_attributes][custom_field_answers][12894][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12894" name="registration[person_attributes][custom_field_answers][12894][]">
-                                        <option value="Surgical Technician">Surgical Technician</option>
-                                        <option value="CRNA">CRNA</option>
-                                        <option value="RN">RN</option>
-                                        <option value="CNA">CNA</option>
-                                        <option value="PCA">PCA</option>
-                                        <option value="PA">PA</option>
-                                        <option value="EMT">EMT</option>
-                                        <option value="COA">COA</option>
-                                        <option value="COT">COT</option>
-                                        <option value="APRN">APRN</option>
-                                        <option value="MD">MD</option>
-                                        <option value="OTHER">OTHER</option>
-                                        <option value="No Applicable Professional Title">No Applicable Professional Title</option>
-                                    </select>
-
                                 </div>
 
+                                <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="Surgical Technician">Surgical Technician</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="CRNA">CRNA</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="RN">RN</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="CNA">CNA</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="PCA">PCA</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="PA">PA</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="EMT">EMT</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="COA">COA</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="COT">COT</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="APRN">APRN</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="OTHER">OTHER</label></div>
+                                    <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="No Applicable Professional Title">No Applicable Professional Title</label></div>
+                              </div>
 
+                                    <div class="control_row">
+                                        <label> What/which state(s) are you licensed to practice in? </label>
+                                        <br />
 
-
-
-
-
-                                <div class="control_row">
-                                    <label>* What/which state(s) are you licensed to practice in? </label>
-                                    <br />
-
-                                    <input name="registration[person_attributes][custom_field_answers][12935][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12935" name="registration[person_attributes][custom_field_answers][12935][]">
-                                        <option value="AL">AL</option>
-                                        <option value="AK">AK</option>
-                                        <option value="AZ">AZ</option>
-                                        <option value="AR">AR</option>
-                                        <option value="CA">CA</option>
-                                        <option value="CO">CO</option>
-                                        <option value="CT">CT</option>
-                                        <option value="DE">DE</option>
-                                        <option value="FL">FL</option>
-                                        <option value="GA">GA</option>
-                                        <option value="HI">HI</option>
-                                        <option value="ID">ID</option>
-                                        <option value="IL">IL</option>
-                                        <option value="IN">IN</option>
-                                        <option value="IA">IA</option>
-                                        <option value="KS">KS</option>
-                                        <option value="KY">KY</option>
-                                        <option value="LA">LA</option>
-                                        <option value="ME">ME</option>
-                                        <option value="MD">MD</option>
-                                        <option value="MA">MA</option>
-                                        <option value="MI">MI</option>
-                                        <option value="MN">MN</option>
-                                        <option value="MS">MS</option>
-                                        <option value="MS">MS</option>
-                                        <option value="MT">MT</option>
-                                        <option value="NE">NE</option>
-                                        <option value="NV">NV</option>
-                                        <option value="NH">NH</option>
-                                        <option value="NJ">NJ</option>
-                                        <option value="NM">NM</option>
-                                        <option value="NY">NY</option>
-                                        <option value="NC">NC</option>
-                                        <option value="ND">ND</option>
-                                        <option value="OH">OH</option>
-                                        <option value="OK">OK</option>
-                                        <option value="OR">OR</option>
-                                        <option value="PA">PA</option>
-                                        <option value="RI">RI</option>
-                                        <option value="SC">SC</option>
-                                        <option value="SD">SD</option>
-                                        <option value="TN">TN</option>
-                                        <option value="TX">TX</option>
-                                        <option value="UT">UT</option>
-                                        <option value="VT">VT</option>
-                                        <option value="VA">VA</option>
-                                        <option value="WA">WA</option>
-                                        <option value="WV">WV</option>
-                                        <option value="WI">WI</option>
-                                        <option value="WY">WY</option>
-                                    </select>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group string required registration_person_custom_field_answers_12936"><label class="string required control-label" for="registration_person_attributes_custom_field_answers_12936"><abbr title="required">*</abbr> Professional License Number</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_custom_field_answers_12936" name="registration[person_attributes][custom_field_answers][12936]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <label>* Area Speciality</label>
-                                    <br />
-
-                                    <input name="registration[person_attributes][custom_field_answers][12937][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12937" name="registration[person_attributes][custom_field_answers][12937][]">
-                                        <option value="Pre-Op">Pre-Op</option>
-                                        <option value="PACU">PACU</option>
-                                        <option value="Circulation">Circulation</option>
-                                        <option value="Surgery (Scrub Tech/Nurse)">Surgery (Scrub Tech/Nurse)</option>
-                                        <option value="Recovery">Recovery</option>
-                                    </select>
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="control_row">
-                                    <div class="control-group select required registration_person_custom_field_answers_12895">
-                                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
-                                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
-                                                <option value="">Select...</option>
-                                                <option value="XS">XS</option>
-                                                <option value="S">S</option>
-                                                <option value="M">M</option>
-                                                <option value="L">L</option>
-                                                <option value="XL">XL</option>
-                                                <option value="XXL">XXL</option>
-                                            </select>
+                                        <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AK">Alaska</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AL">Alabama</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AR">Arkansas</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AZ">Arizona</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CA">California</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CO">Colorado</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CT">Connecticut</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DC">District Of Columbia</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DE">Delaware</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="FL">Florida</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="GA">Georgia</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="HI">Hawaii</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IA">Iowa</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ID">Idaho</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IL">Illinois</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IN">Indiana</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KS">Kansas</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KY">Kentucky</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="LA">Louisiana</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MA">Massachusetts</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MD">Maryland</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ME">Maine</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MI">Michigan</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MN">Minnesota</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MO">Missouri</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MS">Mississippi</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MT">Montana</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NC">North Carolina</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ND">North Dakota</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NE">Nebraska</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NH">New Hampshire</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NJ">New Jersey</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NM">New Mexico</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NV">Nevada</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NY">New York</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OH">Ohio</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OK">Oklahoma</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OR">Oregon</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="PA">Pennsylvania</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="RI">Rhode Island</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SC">South Carolina</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SD">South Dakota</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TN">Tennessee</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TX">Texas</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="UT">Utah</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VA">Virginia</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VT">Vermont</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WA">Washington</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WI">Wisconsin</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WV">West Virginia</label></div>
+                                            <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WY">Wyoming</label></div>
                                         </div>
                                     </div>
+
+                                <label>Professional license Number</label>
+                                <div>
+                                    <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
                                 </div>
 
 
+                                <div class="control_row">
+                                    <label>Area of Specialty</label>
+                                    <br />
+                                </div>
+
+                                <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+                                    <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Pre-Op">Pre-Op</label></div>
+                                    <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="PACU">PACU</label></div>
+                                    <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Circulation">Circulation</label></div>
+                                    <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Surgery (Scrub Tech/Nurse)">Surgery (Scrub Tech/Nurse)</label></div>
+                                    <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Recovery">Recovery</label></div>
+                                </div>
 
 
-                                <input type="submit" name="commit" value="Submit" class="btn btn btn-success btn-lg" data-disable-with="Saving..." />
-                            </form>
+                                    <div class="control_row">
+                                        <div class="control-group select required registration_person_custom_field_answers_12895">
+                                            <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
+                                                <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                                    <option value="">Select...</option>
+                                                    <option value="XS">XS</option>
+                                                    <option value="S">S</option>
+                                                    <option value="M">M</option>
+                                                    <option value="L">L</option>
+                                                    <option value="XL">XL</option>
+                                                    <option value="XXL">XXL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <br />
+
+                                    <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
+</form>
                         </div>
                     </div>
-
-                    <!-- Feature image -->
-                    <div class="grid-50 tablet-grid-50 mobile-grid-100">
-
-
-                        <!-- About blurb -->
-                        <div class="infoCard campaignInfo">
-
-                            <section class="textContent" id="registration_form_about">
-                                This particular form is specifically for health care workers who provide direct care to patients, are not physicians, and who have licensed medical certifications e.g. RN’s, CRNA’s, APRN’s, LPN’s, etc or who provide some level of clinical care but are not licensed providers i.e. CNA’s, Scrub Tech’s, etc. All other individuals who work in a healthcare setting, including medical students, but who do not fall into the above two categories should complete the <a href="https://soslouisville.kindful.com/register/non-clinical-general-volunteer-form-2018">'General, Non Clinical Volunteer Form'</a>. <br>
-                            </section>
-
-                        </div><!-- .campaignInfo -->
-
-                    </div>
-                </div><!-- .grid-container -->
-
-            </div>
-        </div>
-        <div id="dialog"></div>
-        <footer id="footer" class='full-width ' style='display: none;'>
-
-            <div id='footer-wrapper'>
-                <div class='footer-brand clearfix'>
-                    <h5 class="organization-title-small helvetica"><a href="/dashboard">Surgery on Sunday Louisville</a></h5>
-
-                    <div id="powered-by">powered by <a href="https://www.kindful.com/"><img alt="Kindful" src="/assets/kindful-small-c874e16e72e31025afd05d99b17f5af248757eb3a76b612a74f6a15c2e11ba42.png" /></a></div>
-                </div>
-
-
-                <nav class="footer-navigation helvetica clearfix ">
-                    <ul class="unstyled unpadded">
-                        <li class="footer-li"><a href="/users/sign_in">Sign In</a></li>
-                        <li class="footer-li"><a href="/contact">Contact</a></li>
-                        <li class="footer-li"><a href="/refund_policy">Refunds</a></li>
-                        <li class="footer-li"><a href="/privacy_policy">Privacy</a></li>
-                        <li class="footer-li"><a href="/terms_of_use">Terms</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
 
     </div>
 </body>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-
-    })
-
-    var is_touch_device = 'ontouchstart' in document.documentElement;
-
-    if(!is_touch_device){
-      $(".outer-wrapper").mCustomScrollbar({
-        advanced: {
-            updateOnContentResize: true,
-            autoScrollOnFocus: true
-        },
-        mouseWheelPixels: 10,
-        scrollInertia: 200,
-        theme: "dark-2",
-        contentTouchScroll: true,
-        autoHideScrollbar: true,
-        callbacks: {
-          onReady: function() {
-            if ($('.mCSB_container').height() <= $('body').height()) {
-              $('.outer-wrapper').css({ height: '100%' });
-              $('.mCustomScrollBox').css({ height: '100%' });
-              $('.mCSB_container').css({ height: '100%' });
-              $('#main-wrapper').css({ height: '100%' });
-            }
-
-            if ($('.mCSB_container').height() > $('body').height()) {
-              $('.mCustomScrollBox').css({ height: 'inherit' });
-              $('.mCSB_container').css({ height: 'auto' });
-              $('#main-wrapper').css({ height: 'auto' });
-            }
-
-            if ($('.mCSB_container').height() <= $('#content-wrapper').outerHeight()) {
-              $('.outer-wrapper').css({ height: '100%' });
-              $('.mCustomScrollBox').css({ height: $('#content-wrapper').outerHeight() });
-              $('.mCSB_container').css({ height: $('#content-wrapper').outerHeight() });
-              $('#main-wrapper').css({ height: $('#content-wrapper').outerHeight() });
-            }
-          }
-        }
-      });
-    };
-    window.PixelAdmin.start(init);
-</script>
-
-<script type="text/javascript">
-
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-35593798-3', 'kindful.com');
-    ga('send', 'pageview');
-
-
-  ga(function() {
-      document.getElementById("google_analytics_tracking_token").value = ga.getByName("t0").get('trackingId');
-    });
-</script>
-<div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=642429092441928";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  function facebookShare(title, url, image_url, message){
-    FB.ui({
-        method: 'feed',
-        name: title,
-        link: url,
-        picture: image_url,
-        description: message
-    }, function(response) {
-        if(response && response.post_id){}
-        else{}
-    });
-  }
-</script>
 
 
 
-</html>
+
+
 
