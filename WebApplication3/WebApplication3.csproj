@@ -249,6 +249,9 @@
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
     <Content Include="Pictures\FacebookWhite.png" />
+    <Content Include="Pictures\igWhite.png" />
+    <Content Include="Pictures\igWhiteUse.png" />
+    <Content Include="Pictures\instagram-icon-logo-vector-download-400x400.jpg" />
     <Content Include="Pictures\JordanSOS.jpg" />
     <Content Include="Pictures\SamSOS.png" />
     <Content Include="Pictures\SOS Collage.jpg" />
