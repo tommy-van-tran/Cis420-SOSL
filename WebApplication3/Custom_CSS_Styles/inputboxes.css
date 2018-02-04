@@ -1,0 +1,23 @@
+﻿inputboxes{
+ 
+
+
+    border: 3px solid gray;
+    width: 368px;
+    height: 33px;
+    color: silver;
+    font-size: 22px;
+    padding-left: 10px;
+    border: 2px solid red;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+inputboxes:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 10px blue;
+}
+
+
