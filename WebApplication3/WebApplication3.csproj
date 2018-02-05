@@ -334,6 +334,7 @@
     <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
     <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
     <Content Include="Views\Donate\Donate.cshtml" />
+    <Content Include="Views\Home\PatientTestimonial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
