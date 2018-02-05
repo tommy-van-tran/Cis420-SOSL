@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - SOS Louisville</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/Footer.css" />
 
 </head>
 <body>
@@ -95,13 +96,81 @@
         }
     </style>
 
+    <!--Footer Contents-->
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p style="padding-left:5vw">&copy; @DateTime.Now.Year </p>
+
+            <div class="card-group" id="site-footer">
+
+                <!--SOSL Custom Logo-->
+                <div class="footer-card card" id="footer-logo">
+                    <img class="card-img" src="~/Pictures/Collage.png" alt="Surgery on Sunday Louisville Simplified Logo">
+                    <div class="card-block">
+                    </div>
+                </div>
+
+                <!--Contact Information Card-->
+                <div class="footer-card card">
+                    <div class="card-block">
+                        <h4 class="card-title">Contact Information</h4>
+                        <ul class="footer-ul">
+                            <li id="contact-address-li">PO Box 4757 <br />Louisville, KY 40204</li>
+                            <li id="contact-number-li"><p>502-242-2089</p></li>
+                            <li id="contact-email-li"><p>info@soslouisville.org</p></li>
+                            <li id="contact-times-li"><p>Monday-Friday, 8AM-5PM</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Social Media Icons-->
+                <div class="footer-card card">
+                    <div class="card-block">
+                        <h4 class="card-title">Follow Us!</h4>
+                        <ul class="footer-ul" id="social-media-footer">
+                            <li>
+                                <a href="https://www.facebook.com/SurgeryonSundayLouisville" target="_blank">
+                                    <img src="~/Pictures/Footer-Icons/facebook-icon.png" alt="Facebook icon." />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/soslouisville" target="_blank">
+                                    <img src="~/Pictures/Footer-Icons/twitter-icon.png" alt="Twitter icon." />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/SOSLouisville/" target="_blank">
+                                    <img src="~/Pictures/Footer-Icons/instagram-icon.png" alt="Instagram icon." />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCi8B7g8j_fs-4UFcSPf2xXg//" target="_blank">
+                                    <img src="~/Pictures/Footer-Icons/youtube-icon.png" alt="Youtube icon." />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Site Map-->
+                <div class="footer-card card">
+                    <div class="card-block">
+                        <h4 class="card-title">Site Map</h4>
+                        <p class="card-text"><a href="">Home</a></p>
+                        <p class="card-text"><a href="">About Us</a></p>
+                        <p class="card-text"><a href="">Get Help</a></p>
+                        <p class="card-text"><a href="">Get Involved</a></p>
+                        <p class="card-text"><a href="">Patient Referral</a></p>
+                        <p class="card-text"><a href="">Events</a></p>
+                        <p class="card-text"><a href="">Donate</a></p>
+                    </div>
+                </div>
+            </div>
+
         </footer>
     </div>
+    <!--End of Footer Contents-->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
