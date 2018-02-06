@@ -3,6 +3,113 @@
     ViewBag.Title = "GeneralForm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<br />
+<h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Clinical General Volunteer Form</h2>
+<div style="padding-left:5vw">
+<span class='right-header-link'>
+    <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
+    <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
+</span>
+    </div>
+<br />
 
-<h2>GeneralForm</h2>
+<div link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
+    <label>First Name</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
+        This volunteer form is for all individuals who wish to volunteer with SOSL in a non-clinical fashion, or for undergraduate and medical students who wish to shadow our clinical operations.
+    </div>
+
+    <label>Last Name</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+
+    <label>Address</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>City</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>State</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>Postal Code</label>
+    <div>
+        <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>Mobile Phone</label>
+    <div>
+        <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+    </div>
+
+    <label>Email</label>
+    <div>
+        <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>Birthday</label>
+    <div>
+        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+    </div>
+
+    <label>Preferred Name</label>
+    <div>
+        <div><input required maxlength="50" aria-required="false" size="1000" type="text" /></div>
+    </div>
+
+    <label>Employer</label>
+    <div>
+        <div><input required maxlength="50" aria-required="false" size="1000" type="text" /></div>
+    </div>
+    
+    <label>Which Best Describes You?</label>
+    <div>
+        <select>
+            <option>Undergraduate Student</option>
+            <option>Medical Student (1st-3rd Year)</option>
+            <option>Medical Student (4th Year)</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <label>Which areas are you interested in volunteering in?</label>
+    <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+        <div class="checkbox"><label><input name="interestArea[]" type="checkbox" value="Registration">Registration</label></div>
+        <div class="checkbox"><label><input name="interestArea[]" type="checkbox" value="Cleaning">Cleaning</label></div>
+        <div class="checkbox"><label><input name="interestArea[]" type="checkbox" value="Clinical Shadowing">Clinical Shadowing</label></div>
+        <div class="checkbox"><label><input name="interestArea[]" type="checkbox" value="Fundraising">Fundraising</label></div>
+        </div>
+    
+    <label>Briefly Explain to us why you are interested in serving with SOSL.</label>
+    <div>
+        <textarea style="resize:none" rows="4" cols="50"></textarea>
+    </div>
+
+    <label>What is your T-Shirt Size?</label>
+    <div>
+        <select>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>2XL</option>
+        </select>
+    </div>
+    <br>
+    </div>
+    
+    <div style="padding-left:5vw; padding-right:5vw"><input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
 

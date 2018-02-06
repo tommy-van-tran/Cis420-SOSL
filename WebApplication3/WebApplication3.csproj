@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -237,7 +238,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Custom_CSS_Styles\Carousel.css" />
+    <Content Include="Custom_CSS_Styles\Footer.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
+    <Content Include="Custom_CSS_Styles\inputboxes.css" />
     <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -246,9 +249,14 @@
     <Content Include="Pictures\1.jpg" />
     <Content Include="Pictures\BeatrizSOS.jpeg" />
     <Content Include="Pictures\Collage.png" />
+    <Content Include="Pictures\CollageUse.png" />
+    <Content Include="Pictures\Donate.jpg" />
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
     <Content Include="Pictures\FacebookWhite.png" />
+    <Content Include="Pictures\igWhite.png" />
+    <Content Include="Pictures\igWhiteUse.png" />
+    <Content Include="Pictures\instagram-icon-logo-vector-download-400x400.jpg" />
     <Content Include="Pictures\JordanSOS.jpg" />
     <Content Include="Pictures\SamSOS.png" />
     <Content Include="Pictures\SOS Collage.jpg" />
@@ -324,14 +332,17 @@
     <Content Include="Views\Home\Staff.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
-    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
-    <Content Include="Views\GetInvolved\MedicalInterpreterVolunteer.cshtml" />
     <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
-    <Content Include="Views\GetInvolved\VolunteerCommentForm.cshtml" />
+    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
+    <Content Include="Views\Donate\Donate.cshtml" />
+    <Content Include="Views\Home\PatientTestimonial.cshtml" />
+    <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pictures\Footer-Icons\" />
     <Folder Include="Views\Staff\" />
   </ItemGroup>
   <ItemGroup>

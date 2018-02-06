@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Donate";
+}
+
+<style type="text/css">
+    .vertical-divider {
+        clear: both;
+        position: relative;
+    }
+
+        .vertical-divider:after {
+            clear: both;
+            content: " ";
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+
+        .vertical-divider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after {
+            background: #DDDDDD;
+            bottom: 0;
+            content: " ";
+            margin-left: -10px;
+            position: absolute;
+            top: 0;
+            width: 1px;
+        }
+
+    .container {
+        position: relative;
+        width: 960px;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+        .container .column, .container .columns {
+            float: left;
+            display: inline;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .container .one-third.column {
+            width: 300px;
+        }
+
+        .container .two-thirds.column {
+            width: 620px;
+        }
+</style>
+
+
+
+<div class="container vertical-divider">
+    <div class="column one-third">
+        <h1>Donate</h1>
+    </div>
+    <div class="column two-thirds">
+        <p>Your donations allow us to continue providing medical assistance to those in need. Thanks to your generosity our patients never see a bill!</p>
+    </div>
+</div>
+
+<div class="container vertical-divider">
+    <div class="column one-third">
+        <h3>We can't do it without you</h3>
+        <p>As a non-profit Surgery on Sunday Louisville relies on the generosity of our donors to help serve the impoverished and uninsured. With your help we are able to provide outpatient surgical and endoscopic procedures for our patients free of charge. Your donation could make a huge impact on someone's life</p>
+    </div>
+    <div class="column one-third">
+        <div style="text-align:center">
+            <h3>Donate Today!</h3>
+        </div>
+        <div style="text-align:center">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                <input type="hidden" name="cmd" value="_donations">
+
+                <input type="hidden" name="business" value="zryansmith@hotmail.com">
+
+                <input type="hidden" name="item_name" value="Donation">
+
+
+                <input type="hidden" name="item_number" value="Surgery on Sunday Louisville">
+
+
+                How much would you like to donate?<br />
+                $ <input type="text" name="amount">
+
+                <input type="hidden" name="no_shipping" value="0">
+                <input type="hidden" name="no_note" value="1">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="lc" value="AU">
+                <input type="hidden" name="bn" value="PP-BuyNowBF">
+                <input type="hidden" name="return" value="http://localhost:54297/Home/DonationReceived">
+
+                <br /><br />
+                <input type="image" name="submit"
+                       src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                       alt="Donate">
+                <img alt="" width="1" height="1"
+                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+
+            </form>
+        </div>
+    </div>
+    <div class="column one-third">
+
+        <img src="~/Pictures/Donate.jpg" alt="Donate" height="375" align="middle" /><img /><br />
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
