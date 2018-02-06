@@ -196,6 +196,7 @@
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -341,6 +342,8 @@
     <Content Include="Views\Home\PatientTestimonial.cshtml" />
     <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
     <Content Include="Views\EventCreator\EventCreator.cshtml" />
+    <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
+    <Content Include="Views\PatientReferral\PatientReferralPasswordPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
