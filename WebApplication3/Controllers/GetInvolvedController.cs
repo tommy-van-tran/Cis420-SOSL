@@ -34,7 +34,7 @@ namespace WebApplication3.Controllers
         {
             return View();
         }
-        public ActionResult VolunteerCommentForm()
+        public ActionResult VolunteerComment()
         {
             return View();
         }

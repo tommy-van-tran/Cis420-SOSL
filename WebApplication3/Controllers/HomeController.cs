@@ -34,5 +34,9 @@ namespace WebApplication3.Controllers
         {
             return View();
         }
+        public ActionResult PatientTestimonial()
+        {
+            return View();
+        }
     }
 }

@@ -191,6 +191,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
+    <Compile Include="Controllers\EventCreatorController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -238,7 +239,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Custom_CSS_Styles\Carousel.css" />
+    <Content Include="Custom_CSS_Styles\Footer.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
+    <Content Include="Custom_CSS_Styles\inputboxes.css" />
     <Content Include="Custom_CSS_Styles\Pulsing effect.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -247,6 +250,7 @@
     <Content Include="Pictures\1.jpg" />
     <Content Include="Pictures\BeatrizSOS.jpeg" />
     <Content Include="Pictures\Collage.png" />
+    <Content Include="Pictures\CollageUse.png" />
     <Content Include="Pictures\Donate.jpg" />
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\Facebooklogo.png" />
@@ -334,9 +338,13 @@
     <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
     <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
     <Content Include="Views\Donate\Donate.cshtml" />
+    <Content Include="Views\Home\PatientTestimonial.cshtml" />
+    <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
+    <Content Include="Views\EventCreator\EventCreator.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pictures\Footer-Icons\" />
     <Folder Include="Views\Staff\" />
   </ItemGroup>
   <ItemGroup>

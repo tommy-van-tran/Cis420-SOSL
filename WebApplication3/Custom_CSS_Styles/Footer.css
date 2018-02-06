@@ -1,0 +1,83 @@
+﻿/* Stylesheet for footers, linked to the layout.cshtml */
+
+.footer-card {
+    border: 0px !important;
+}
+
+#site-footer {
+    border: none;
+}
+
+.card-title {
+    padding-bottom: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#site-footer a {
+    color: black;
+}
+
+#site-footer a:hover {
+    color: #BD2031;
+}
+
+#site-footer a:active {
+    font-weight: bold;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-address-li {
+    background-image: url('/Pictures/Footer-Icons/mailbox-icon-small.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 64px;
+    padding-bottom: 26px;
+    padding-top: 10px;
+}   
+
+#contact-number-li {
+    background-image: url('/Pictures/Footer-Icons/phone-icon-small.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 64px;
+    padding-bottom: 26px;
+    padding-top: 10px;
+}
+
+#contact-email-li {
+    background-image: url('/Pictures/Footer-Icons/email-icon-small.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 64px;
+    padding-bottom: 26px;
+    padding-top: 14px;
+}
+
+#contact-times-li {
+    background-image: url('/Pictures/Footer-Icons/clock-icon-small.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 64px;
+    padding-bottom: 26px;
+    padding-top: 14px;
+}
+
+#footer-logo img {
+    padding-top: 75px;
+    left: 50%;
+    max-height: 512px;
+    max-width: 265px;
+}
+
+#social-media-footer li {
+    padding-bottom: 26px;
+}
+
