@@ -249,6 +249,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pictures\1.jpg" />
+    <Content Include="Pictures\3907.png" />
     <Content Include="Pictures\BeatrizSOS.jpeg" />
     <Content Include="Pictures\Collage.png" />
     <Content Include="Pictures\CollageUse.png" />
@@ -268,6 +269,7 @@
     <Content Include="Pictures\SOSShirtPic.jpg" />
     <Content Include="Pictures\SOSShirtPicUse.png" />
     <Content Include="Pictures\SOS_white_logo.png" />
+    <Content Include="Pictures\triangle-down-arrow-icon-65007.png" />
     <Content Include="Pictures\TwitterJustBird.png" />
     <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Custom_CSS_Styles\Rotating pics.css" />
