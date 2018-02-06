@@ -191,7 +191,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
-    <Compile Include="Controllers\EventCreatorController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -277,6 +276,7 @@
     </Content>
     <Content Include="Content\SOSL-Eligability-Criteria-Criteria-Only-W-2.pdf" />
     <Content Include="Content\bootstrapNEW.Min.css" />
+    <None Include="Properties\PublishProfiles\equine.cis420.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Bootstrap.min.NEW.js" />
     <Content Include="Scripts\bootstrapNEW %281%29.js" />
@@ -340,7 +340,6 @@
     <Content Include="Views\Donate\Donate.cshtml" />
     <Content Include="Views\Home\PatientTestimonial.cshtml" />
     <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
-    <Content Include="Views\EventCreator\EventCreator.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
