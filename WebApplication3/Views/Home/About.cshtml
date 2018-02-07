@@ -300,6 +300,13 @@
                 options = $.extend({}, options || {}, $this.data('countToOptions') || {});
                 $this.countTo(options);
             }
+
+            $(window).scroll(function () {
+                console.log($(window).scrollTop());
+                if ($(window).scrollTop() > 300 && $(window).scrollTop() < 850) {
+                    $('.timer').each(count);
+                }
+            });
         });</script>
 
     <br /><br /><br /><br /><br />
