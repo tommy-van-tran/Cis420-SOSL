@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="~/Content/bootstrap.css">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger"style="font-size:20px">
         <img class="navbar-brand" src="~/Pictures/SOS_white_logo.png" width="170" height="80"onclick="window.location.href='/Home'"style="cursor:pointer" />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,10 +48,11 @@
                     <a class="nav-link" href="~/Account/Login">Login</a>
                 <li class="nav-item active">
                     <a class="nav-link" href="~/Donate/Donate">Donate</a>
-                <li class="nav-item active">
-                    <a class="nav-link" href="~/Donate/Donate">Donate</a>
-                <li class="nav-item active">
-                    <a class="nav-link" href="~/ContactUs/ContactUs">Contact Us</a>
+                <li class="dropdown">
+                    <a class="nav-link"style="color:white" href="~/PatientReferral/PatientReferral">Refer a Patient</a>
+                    <div class="dropdown-content">
+                        <a href="~/PatientReferral/PatientReferralPasswordPage">Get Started</a>
+                    </div>
             </ul>
             <img src="~/Pictures/TwitterJustBird.png" width="35" height="25" onclick="window.open('https://twitter.com/soslouisville?lang=en')" style="cursor:pointer;padding-left:4px" /><img />
             <img src="~/Pictures/FacebookWhite.png" width="30" height="28" onclick="window.open('https://www.facebook.com/SurgeryonSundayLouisville/')" style="cursor:pointer; padding-left:4px" /><img />
@@ -137,22 +138,22 @@
                         <ul class="footer-ul" id="social-media-footer">
                             <li>
                                 <a href="https://www.facebook.com/SurgeryonSundayLouisville" target="_blank">
-                                    <img src="~/Pictures/Footer-Icons/facebook-icon.png" alt="Facebook icon." />
+                                    <img src="~/Pictures/facebook-icon.png" alt="Facebook icon." />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/soslouisville" target="_blank">
-                                    <img src="~/Pictures/Footer-Icons/twitter-icon.png" alt="Twitter icon." />
+                                    <img src="~/Pictures/twitter-icon.png" alt="Twitter icon." />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/SOSLouisville/" target="_blank">
-                                    <img src="~/Pictures/Footer-Icons/instagram-icon.png" alt="Instagram icon." />
+                                    <img src="~/Pictures/instagram-icon.png" alt="Instagram icon." />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UCi8B7g8j_fs-4UFcSPf2xXg//" target="_blank">
-                                    <img src="~/Pictures/Footer-Icons/youtube-icon.png" alt="Youtube icon." />
+                                    <img src="~/Pictures/youtube-icon.png" alt="Youtube icon." />
                                 </a>
                             </li>
                         </ul>
@@ -167,9 +168,8 @@
                         <p class="card-text"><a href="~/Home/About">About Us</a></p>
                         <p class="card-text"><a href="~/GetHelp/GetHelp">Get Help</a></p>
                         <p class="card-text"><a href="~/GetInvolved/GetInvolved">Get Involved</a></p>
-                        <p class="card-text"><a href="">Patient Referral</a></p>
+                        <p class="card-text"><a href="~/PatientReferral/PatientReferral">Patient Referral</a></p>
                         <p class="card-text"><a href="">Events</a></p>
-                        <p class="card-text"><a href="~/ContactUs/ContactUs">Contact Us Form</a></p>
                         <p class="card-text"><a href="~/Donate/Donate">Donate</a></p>
                     </div>
                 </div>
