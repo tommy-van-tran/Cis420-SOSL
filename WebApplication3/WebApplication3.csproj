@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventCreatorController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
@@ -341,6 +342,7 @@
     <Content Include="Views\Home\PatientTestimonial.cshtml" />
     <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
     <Content Include="Views\EventCreator\EventCreator.cshtml" />
+    <Content Include="Views\ContactUs\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
