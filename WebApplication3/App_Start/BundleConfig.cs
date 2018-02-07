@@ -25,10 +25,6 @@ namespace WebApplication3
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      
-                      "~/Content/bootstrap.min.css",
-
-
                       "~/Content/bootstrapNEW.Min.css",
                       "~/Content/site.css"));
         }
