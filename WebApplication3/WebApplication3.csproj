@@ -247,30 +247,31 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Pictures\1.jpg" />
-    <Content Include="Pictures\3907.png" />
     <Content Include="Pictures\BeatrizSOS.jpeg" />
     <Content Include="Pictures\Collage.png" />
     <Content Include="Pictures\CollageUse.png" />
     <Content Include="Pictures\Donate.jpg" />
     <Content Include="Pictures\EricaSOS.jpg" />
-    <Content Include="Pictures\Facebooklogo.png" />
     <Content Include="Pictures\FacebookWhite.png" />
-    <Content Include="Pictures\igWhite.png" />
+    <Content Include="Pictures\clock-icon-small.png" />
+    <Content Include="Pictures\email-icon-small.png" />
+    <Content Include="Pictures\facebook-icon.png" />
+    <Content Include="Pictures\instagram-icon.png" />
+    <Content Include="Pictures\mailbox-icon-small.png" />
+    <Content Include="Pictures\phone-icon-small.png" />
+    <Content Include="Pictures\triangle-down-arrow-icon-65007.png" />
+    <Content Include="Pictures\twitter-icon.png" />
+    <Content Include="Pictures\youtube-icon.png" />
     <Content Include="Pictures\igWhiteUse.png" />
-    <Content Include="Pictures\instagram-icon-logo-vector-download-400x400.jpg" />
     <Content Include="Pictures\JordanSOS.jpg" />
     <Content Include="Pictures\SamSOS.png" />
     <Content Include="Pictures\SOS Collage.jpg" />
     <Content Include="Pictures\SOS Pic.jpg" />
     <Content Include="Pictures\SOSLogo.jpg" />
     <Content Include="Pictures\SosLouTranspar.png" />
-    <Content Include="Pictures\SOSShirtPic.jpg" />
     <Content Include="Pictures\SOSShirtPicUse.png" />
     <Content Include="Pictures\SOS_white_logo.png" />
-    <Content Include="Pictures\triangle-down-arrow-icon-65007.png" />
     <Content Include="Pictures\TwitterJustBird.png" />
-    <Content Include="Pictures\twitterLogo.png" />
     <Content Include="Custom_CSS_Styles\Rotating pics.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -348,7 +349,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pictures\Footer-Icons\" />
     <Folder Include="Views\Staff\" />
   </ItemGroup>
   <ItemGroup>

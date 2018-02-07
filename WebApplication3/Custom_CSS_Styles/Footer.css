@@ -35,7 +35,7 @@
 }
 
 #contact-address-li {
-    background-image: url('/Pictures/Footer-Icons/mailbox-icon-small.png');
+    background-image: url('/Pictures/mailbox-icon-small.png');
     background-repeat: no-repeat;
     background-position: 0px 0px;
     padding-left: 64px;
@@ -44,7 +44,7 @@
 }   
 
 #contact-number-li {
-    background-image: url('/Pictures/Footer-Icons/phone-icon-small.png');
+    background-image: url('/Pictures/phone-icon-small.png');
     background-repeat: no-repeat;
     background-position: 0px 0px;
     padding-left: 64px;
@@ -53,7 +53,7 @@
 }
 
 #contact-email-li {
-    background-image: url('/Pictures/Footer-Icons/email-icon-small.png');
+    background-image: url('/Pictures/email-icon-small.png');
     background-repeat: no-repeat;
     background-position: 0px 0px;
     padding-left: 64px;
@@ -62,7 +62,7 @@
 }
 
 #contact-times-li {
-    background-image: url('/Pictures/Footer-Icons/clock-icon-small.png');
+    background-image: url('/Pictures/clock-icon-small.png');
     background-repeat: no-repeat;
     background-position: 0px 0px;
     padding-left: 64px;
