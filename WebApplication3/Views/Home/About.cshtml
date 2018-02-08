@@ -28,7 +28,7 @@
         ">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%">
         <!-- Indicators -->
-        <div class="carousel-caption" style="padding-bottom:14vw; text-shadow: 2px 2px crimson;"><h1><b>Explore SOS Louisville</b><br /><img src="~/Pictures/triangle-down-arrow-icon-65007.png" style="height:40px; width:40px" /></h1></div>
+        <div class="carousel-caption" style="padding-bottom:14vw; text-shadow: 2px 2px crimson;"><h1 onclick="smoothScroll(document.getElementById('target'))"style="cursor:pointer"><b>Explore SOS Louisville</b><br /><img src="~/Pictures/triangle-down-arrow-icon-65007.png"onclick="smoothScroll(document.getElementById('target'))" style="height:40px; width:40px; cursor:pointer" /></h1></div>
         <ol class="carousel-indicators" align="middle">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -87,7 +87,7 @@
 
 
         <br />
-        <div class="row" style="display:flex; justify-content:center; margin:0">
+        <div class="row"id="target" style="display:flex; justify-content:center; margin:0">
             <div class="column">
                 <div>
                     <h3 class="pulsate"><link class="pulsate" rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/Pulsing effect.css" /> <img src="~/Pictures/CollageUse.png" height="400" width="450" /></h3>
@@ -308,6 +308,28 @@
                 }
             });
         });</script>
+    <script>window.smoothScroll = function (target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function (c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function () { scroll(c, a, b, i); }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }</script>
 
     <br />
 </body>
