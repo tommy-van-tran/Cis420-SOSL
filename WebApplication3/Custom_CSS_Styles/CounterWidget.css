@@ -65,6 +65,7 @@
     background-color: #bb1c1c;
     padding: 20px 0;
     border-radius: 5px;
+    box-shadow:black 3px 3px
 }
 
 .count-title {
@@ -73,16 +74,20 @@
     margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
-    color:white
+    color:white;
+    text-shadow:1px 2px black
+        
 }
 
 .count-text {
-    font-size: 13px;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
-    color:white
+    color:white;
+    text-shadow:1px 2px black
+        
 }
 
 .fa-2x {
