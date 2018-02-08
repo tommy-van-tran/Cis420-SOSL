@@ -348,6 +348,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Custom_CSS_Styles\Carousel.css" />
     <Content Include="Custom_CSS_Styles\ContactUsStyle.css" />
+    <Content Include="Custom_CSS_Styles\CounterWidget.css" />
     <Content Include="Custom_CSS_Styles\Footer.css" />
     <Content Include="Custom_CSS_Styles\Form Style.css" />
     <Content Include="Custom_CSS_Styles\inputboxes.css" />
