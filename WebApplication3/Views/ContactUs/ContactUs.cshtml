@@ -1,67 +1,54 @@
 ﻿
 @{
     ViewBag.Title = "ContactUs";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <head>
 
-    <link rel="stylesheet" href="~/Content/bootstrapNEW.Min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Custom_CSS_Styles/ContactUsStyle.css" />
 
 </head>
 
 <body>  
 
     <div class="container body-content" id="contact-header">
-        <h2>Get In Touch With Us!</h2>
-        <h3>User the form below to send us an email, or give us a call at 502-242-2089.</h3>
+        <h2>User the form below to send us an email, or give us a call at 502-242-2089.</h2>
+        <img src="~/Pictures/contact-header-img.jpg" alt="Envelope reading: Get In Touch With Us!" />
         <hr />
     </div>
 
 
-    <div class="container" id="contact-form">
+    <div class="container">
 
-        <div class="row">
-            <div class="col-6">
-                <input class="contact-input" type="text" value="First Name" /> <!--First Name-->
-            </div>
-
-            <div class="col-6">
-                <input class="contact-input" type="text" value="Last Name" /> <!--Last Name-->
-            </div>
+        <div class="justify-content-end" id="contact-form">
+            <form id="contact" method="post" class="form" role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="first-name-input" placeholder="First Name" type="text" required autofocus/>
+                    </div>
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="last-name-input" placeholder="Last Name" type="text" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="email-input" placeholder="Email Address" type="email" required />
+                    </div>
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="phone-input" placeholder="Phone Number" type="text" required />
+                    </div>
+                </div>
+                <textarea class="contact-input form-control" id="message-input" placeholder="How can we help?" rows="5"></textarea>
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <button class="custom-button btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        
-       <div class="row">
-           <div class="col-6">
-               <input class="contact-input" type="text" value="Email Address" /> <!--Email Address-->
-           </div>
-
-           <div class="col-6">
-               <input class="contact-input" type="text" value="Contact Phone Number" /> <!--Contact Number-->
-           </div>
-       </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <input class="contact-input" type="text" value="Reason For Contact" /> <!--Reason for Contact-->
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <input class="contact-input" type="text" value="Tell Us What You Need" /> <!--Body of Message-->
-            </div>
-        </div>
-
-        <div class="col">
-            <input class="contact-input" type="button" value="Send" /> <!--Send Button-->
-        </div>
-     
-
-        
     </div>
-
+    
 </body>
 
