@@ -363,6 +363,10 @@
     <Content Include="Pictures\BeatrizSOS.jpeg" />
     <Content Include="Pictures\Collage.png" />
     <Content Include="Pictures\CollageUse.png" />
+    <Content Include="Pictures\contact-background.png" />
+    <Content Include="Pictures\contact-background1.png" />
+    <Content Include="Pictures\contact-background2.png" />
+    <Content Include="Pictures\contact-header-img.jpg" />
     <Content Include="Pictures\Donate.jpg" />
     <Content Include="Pictures\EricaSOS.jpg" />
     <Content Include="Pictures\FacebookWhite.png" />
