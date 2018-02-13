@@ -346,7 +346,6 @@
     <Content Include="BOD Pics\VirginiaSOSPic.png" />
     <Content Include="Custom_CSS_Styles\Border.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Custom_CSS_Styles\Carousel.css" />
     <Content Include="Custom_CSS_Styles\ContactUsStyle.css" />
     <Content Include="Custom_CSS_Styles\CounterWidget.css" />
     <Content Include="Custom_CSS_Styles\Footer.css" />
