@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "ContactUs";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+
+    <link rel="stylesheet" href="~/Custom_CSS_Styles/ContactUsStyle.css" />
+
+</head>
+
+<body>  
+
+    <div class="container body-content" id="contact-header">
+        <h2>User the form below to send us an email, or give us a call at 502-242-2089.</h2>
+        <img src="~/Pictures/contact-header-img.jpg" alt="Envelope reading: Get In Touch With Us!" />
+        <hr />
+    </div>
+
+
+    <div class="container">
+
+        <div class="justify-content-end" id="contact-form">
+            <form id="contact" method="post" class="form" role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="first-name-input" placeholder="First Name" type="text" required autofocus/>
+                    </div>
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="last-name-input" placeholder="Last Name" type="text" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="email-input" placeholder="Email Address" type="email" required />
+                    </div>
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="contact-input form-control" id="phone-input" placeholder="Phone Number" type="text" required />
+                    </div>
+                </div>
+                <textarea class="contact-input form-control" id="message-input" placeholder="How can we help?" rows="5"></textarea>
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <button class="custom-button btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
