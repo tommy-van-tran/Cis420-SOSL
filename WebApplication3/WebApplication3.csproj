@@ -198,7 +198,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
-    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -212,15 +211,15 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\CommentFormModel.cs" />
+    <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\NonClinical.cs" />
-    <Compile Include="Models\Nurse.cs" />
-    <Compile Include="Models\Referral.cs" />
-    <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\Surgeon.cs" />
-    <Compile Include="Models\Volunteer.cs" />
+    <Compile Include="Models\MedicalInterpreterModel.cs" />
+    <Compile Include="Models\NonClinicalGeneralVolunteerModel.cs" />
+    <Compile Include="Models\NonPhysicianClinicalVolunteerModel.cs" />
+    <Compile Include="Models\PhysicianVolunteerModel.cs" />
+    <Compile Include="Models\ReferAPatientModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />

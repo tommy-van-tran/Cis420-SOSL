@@ -30,6 +30,6 @@ namespace WebApplication3.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<WebApplication3.Models.Student> Students { get; set; }
+        
     }
 }
