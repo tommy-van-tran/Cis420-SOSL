@@ -197,6 +197,7 @@
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NonClinicalController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,7 +217,8 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MedicalInterpreterModel.cs" />
-    <Compile Include="Models\NonClinicalGeneralVolunteerModel.cs" />
+    <Compile Include="Models\NonClinicalModel.cs" />
+    <Compile Include="Models\NonClinicalViewModel.cs" />
     <Compile Include="Models\NonPhysicianClinicalVolunteerModel.cs" />
     <Compile Include="Models\PhysicianVolunteerModel.cs" />
     <Compile Include="Models\ReferAPatientModel.cs" />
@@ -467,7 +469,7 @@
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
     <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
-    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\NonClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
     <Content Include="Views\Donate\Donate.cshtml" />
     <Content Include="Views\Home\PatientTestimonial.cshtml" />

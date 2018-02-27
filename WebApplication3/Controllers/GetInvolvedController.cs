@@ -19,7 +19,7 @@ namespace WebApplication3.Controllers
             return View();
         }
 
-        public ActionResult GeneralForm()
+        public ActionResult NonClinicalForm()
         {
             return View();
         }

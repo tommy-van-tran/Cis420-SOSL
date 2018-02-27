@@ -1,0 +1,131 @@
+﻿@model WebApplication3.Models.NonClinicalViewModel
+
+@{
+    ViewBag.Title = "NonClinicalForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("NonClinical", "NonClinical", FormMethod.Post))
+{
+    <br />
+    <h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Clinical General Volunteer Form</h2>
+    <div style="padding-left:5vw">
+        <span class='right-header-link'>
+            <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
+            <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
+        </span>
+    </div>
+    <br />
+
+    <div link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
+        <label>First Name</label>
+        <div>@Html.TextBoxFor(Model => Model.FirstName)</div>
+
+        <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
+            This volunteer form is for all individuals who wish to volunteer with SOSL in a non-clinical fashion, or for undergraduate and medical students who wish to shadow our clinical operations.
+        </div>
+
+        <label>Last Name</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.LastName)
+        </div>
+
+
+        <label>Address</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.Address)
+        </div>
+
+        <label>City</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.City)
+        </div>
+
+        <label>State</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.State)
+        </div>
+
+        <label>Postal Code</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.PostalCode)
+        </div>
+
+        <label>Mobile Phone</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.PhoneNumber)
+        </div>
+
+        <label>Email</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.Email)
+        </div>
+
+        <label>Birthday</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.Birthday)
+        </div>
+
+        <label>Preferred Name</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.PreferredName)
+        </div>
+
+        <label>Employer</label>
+        <div>
+            @Html.TextBoxFor(Model => Model.Employer)
+        </div>
+
+        <label>Which Best Describes You?</label>
+        <div>
+            @Html.DropDownListFor(model => Model.BestDescription, new SelectList(
+                  new List<Object>{
+                      new { value = 0, text = "Undergraduate Student"  },
+                      new { value = 1 , text = "Medical Student (1st-3rd Year)" },
+                      new { value = 2 , text = "Medical Student (4th Year)"},
+                      new { value = 3, text = "Other"}
+                  },
+                  "value",
+                  "text",
+                   0))
+        </div>
+
+        <label>Which areas are you interested in volunteering in?</label>
+        <div style="height:10vw;width:12vw;border:1px solid #ccc;overflow:auto;">
+            <div>@Html.CheckBoxFor(Model => Model.Registration)<label>Registration</label></div>
+            <div>@Html.CheckBoxFor(Model => Model.Cleaning)<label>Cleaning</label></div>
+            <div>@Html.CheckBoxFor(Model => Model.ClinicalShadowing)<label>Clinical Shadowing</label></div>
+            <div>@Html.CheckBoxFor(Model => Model.Fundraising)<label>Fundraising</label></div>
+        </div>
+
+
+        <label>Briefly Explain to us why you are interested in serving with SOSL.</label>
+        <div>
+            @Html.TextAreaFor(Model => Model.WhyInterested)
+        </div>
+
+        <label>What is your T-Shirt Size?</label>
+        <div>
+            @Html.DropDownListFor(model => Model.BestDescription, new SelectList(
+                  new List<Object>{
+                      new { value = 0, text = "S"  },
+                      new { value = 1 , text = "M" },
+                      new { value = 2 , text = "L"},
+                      new { value = 3, text = "XL"},
+                      new {value = 4, text = "2XL"}
+                  },
+                  "value",
+                  "text",
+                   0))
+        </div>
+        <br>
+    </div>
+
+
+
+
+    <div style="padding-left:5vw; padding-right:5vw"><input type="submit" id="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
+
+
+}

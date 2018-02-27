@@ -25,6 +25,13 @@ namespace WebApplication3.Models
         {
         }
 
+        public DbSet<EventModel> EventModels { get; set; }
+        public DbSet<NonClinicalModel> NonClinicals { get; set; }
+        public DbSet<MedicalInterpreterModel> MedicalInterpreters { get; set; }
+        public DbSet<NonPhysicianClinicalVolunteerModel> NonPhysicianClinicals { get; set; }
+        public DbSet<PhysicianVolunteerModel> Physicians { get; set; }
+
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
