@@ -69,6 +69,66 @@ namespace WebApplication3.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult Physician(PhysicianViewModel viewModel)
+        {
+            var Physician = new PhysicianModel()
+            {
+                Id = viewModel.Id,
+                FirstName = viewModel.FirstName,
+                LastName = viewModel.LastName,
+                Address = viewModel.Address,
+                City = viewModel.City,
+                State = viewModel.State,
+                ZipCode = viewModel.ZipCode,
+                PrimaryPhone = viewModel.PrimaryPhone,
+                Email = viewModel.Email,
+                DateOfBirth = viewModel.DateOfBirth,
+                MedicalSpecialty = viewModel.MedicalSpecialty,
+                StatesLicensedIn = viewModel.StatesLicensedIn,
+                ProfessionalLicenseNumber = viewModel.ProfessionalLicenseNumber,
+                ProfessionalAlmaMater = viewModel.ProfessionalAlmaMater,
+                GraduationYear = viewModel.GraduationYear,
+            };
+
+            db.Physicians.Add(Physician);
+
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+
+        }
+
+        public ActionResult NonPhysicianClinical(NonPhysicianClinicalViewModel viewModel)
+        {
+            var NonPhysicianClinical = new NonPhysicianClinicalModel()
+            {
+               Id = viewModel.Id,
+               FirstName = viewModel.FirstName,
+               LastName = viewModel.LastName,
+               Address = viewModel.Address,
+               City = viewModel.City,
+               State = viewModel.State,
+               ZipCode = viewModel.ZipCode,
+               PrimaryPhone = viewModel.PrimaryPhone,
+               Email = viewModel.Email,
+               DateOfBirth = viewModel.DateOfBirth,
+               ProfessionalTitles = viewModel.ProfessionalTitles,
+               StatesLicensedIn = viewModel.StatesLicensedIn,
+               ProfessionalLicenseNumber = viewModel.ProfessionalLicenseNumber,
+               AreaOfSpecialty = viewModel.AreaOfSpecialty,
+               ShirtSize = viewModel.ShirtSize,
+              
+                
+            };
+
+            db.NonPhysicianClinicals.Add(NonPhysicianClinical);
+
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+
+        }
         public ActionResult VolunteerComment()
         {
             return View();
