@@ -95,7 +95,7 @@ namespace WebApplication3.Controllers
 
             db.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("GetInvolved", "GetInvolved");
 
         }
 
@@ -126,7 +126,7 @@ namespace WebApplication3.Controllers
 
             db.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("GetInvolved", "GetInvolved");
 
         }
         public ActionResult VolunteerComment()
