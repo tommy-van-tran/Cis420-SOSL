@@ -201,6 +201,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NonClinicalController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
+    <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,8 +227,10 @@
     <Compile Include="Models\MedicalInterpreterModel.cs" />
     <Compile Include="Models\NonClinicalModel.cs" />
     <Compile Include="Models\NonClinicalViewModel.cs" />
-    <Compile Include="Models\NonPhysicianClinicalVolunteerModel.cs" />
-    <Compile Include="Models\PhysicianVolunteerModel.cs" />
+    <Compile Include="Models\NonPhysicianClinicalModel.cs" />
+    <Compile Include="Models\NonPhysicianClinicalViewModel.cs" />
+    <Compile Include="Models\PhysicianModel.cs" />
+    <Compile Include="Models\PhysicianViewModel.cs" />
     <Compile Include="Models\ReferAPatientModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -485,6 +488,7 @@
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
     <Content Include="Views\LandingPage\LandingPage.cshtml" />
     <Content Include="Views\Calendar\Calendar.cshtml" />
+    <Content Include="Views\Tables\Tables.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

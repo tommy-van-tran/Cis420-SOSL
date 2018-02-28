@@ -16,7 +16,7 @@ namespace WebApplication3.Models
         string ZipCode { get; set; }
         string PrimaryPhone { get; set; }
         string Email { get; set; }
-        DateTime DateOfBirth { get; set; }
+        string DateOfBirth { get; set; }
         string PreferredName { get; set; }
         string[] Languages { get; set; }
     }
