@@ -85,8 +85,8 @@
                       new { value = 1 , text = "Medical Student (1st-3rd Year)" },
                       new { value = 2 , text = "Medical Student (4th Year)"},
                       new { value = 3, text = "Other"}
-                  },
-                  "value",
+                  },"text",
+                  
                   "text",
                    0))
         </div>
@@ -107,7 +107,7 @@
 
         <label>What is your T-Shirt Size?</label>
         <div>
-            @Html.DropDownListFor(model => Model.BestDescription, new SelectList(
+            @Html.DropDownListFor(model => Model.TShirtSize, new SelectList(
                   new List<Object>{
                       new { value = 0, text = "S"  },
                       new { value = 1 , text = "M" },
@@ -115,7 +115,7 @@
                       new { value = 3, text = "XL"},
                       new {value = 4, text = "2XL"}
                   },
-                  "value",
+                  "text",
                   "text",
                    0))
         </div>

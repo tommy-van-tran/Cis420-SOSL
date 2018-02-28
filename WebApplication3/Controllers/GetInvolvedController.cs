@@ -67,7 +67,7 @@ namespace WebApplication3.Controllers
 
 
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("GetInvolved", "GetInvolved");
         }
 
         public ActionResult Physician(PhysicianViewModel viewModel)
