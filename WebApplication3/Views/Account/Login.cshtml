@@ -11,7 +11,7 @@
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4 style="color:crimson; padding-left:5vw; padding-right:5vw">Enter your Admin credentials here.</h4>
+                <h4 style="color:crimson; padding-left:5vw; padding-right:5vw">Enter your Admin or Patient Referral credentials here.</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">

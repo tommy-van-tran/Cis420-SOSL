@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventCreatorController.cs" />
@@ -476,12 +477,11 @@
     <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
     <Content Include="Views\Donate\Donate.cshtml" />
     <Content Include="Views\Home\PatientTestimonial.cshtml" />
-    <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
     <Content Include="Views\EventCreator\EventCreator.cshtml" />
     <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
-    <Content Include="Views\PatientReferral\PatientReferralPasswordPage.cshtml" />
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
     <Content Include="Views\LandingPage\LandingPage.cshtml" />
+    <Content Include="Views\Calendar\Calendar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
