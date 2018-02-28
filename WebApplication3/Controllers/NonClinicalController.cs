@@ -7,37 +7,18 @@ using WebApplication3.Models;
 
 namespace WebApplication3.Controllers
 {
-    public class GetInvolvedController : Controller
+    public class NonClinicalController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        // GET: GetInvolved
-        public ActionResult GetInvolved()
+
+        // GET: GeneralVolunteerFormController
+        public ActionResult Index()
         {
-            return View();
-        }
-        
-        public ActionResult PhysicianForm()
-        {
-            return View();
+
+            return View(new NonClinicalViewModel());
         }
 
-        public ActionResult NonClinicalForm()
-        {
-            return View();
-        }
-
-        public ActionResult InterpreterForm()
-        {
-            return View();
-
-        }
-
-        public ActionResult NonPhysicianClinicalForm()
-        {
-            return View();
-        }
-
-        public ActionResult NonClinical(NonClinicalViewModel viewmodel)
+        public ActionResult Index(NonClinicalViewModel viewmodel)
         {
             var NonClinical = new NonClinicalModel()
             {
@@ -68,10 +49,6 @@ namespace WebApplication3.Controllers
 
 
             return RedirectToAction("Index", "Home");
-        }
-        public ActionResult VolunteerComment()
-        {
-            return View();
         }
     }
 }

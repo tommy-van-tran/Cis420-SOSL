@@ -190,13 +190,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventCreatorController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingPageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NonClinicalController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -209,6 +212,10 @@
     <Compile Include="Migrations\201801232030274_AddGPAtoStudents.Designer.cs">
       <DependentUpon>201801232030274_AddGPAtoStudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802272018543_clean.cs" />
+    <Compile Include="Migrations\201802272018543_clean.Designer.cs">
+      <DependentUpon>201802272018543_clean.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommentFormModel.cs" />
@@ -216,7 +223,8 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MedicalInterpreterModel.cs" />
-    <Compile Include="Models\NonClinicalGeneralVolunteerModel.cs" />
+    <Compile Include="Models\NonClinicalModel.cs" />
+    <Compile Include="Models\NonClinicalViewModel.cs" />
     <Compile Include="Models\NonPhysicianClinicalVolunteerModel.cs" />
     <Compile Include="Models\PhysicianVolunteerModel.cs" />
     <Compile Include="Models\ReferAPatientModel.cs" />
@@ -467,15 +475,15 @@
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
     <Content Include="Views\GetInvolved\NonPhysicianClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\PhysicianForm.cshtml" />
-    <Content Include="Views\GetInvolved\GeneralForm.cshtml" />
+    <Content Include="Views\GetInvolved\NonClinicalForm.cshtml" />
     <Content Include="Views\GetInvolved\InterpreterForm.cshtml" />
     <Content Include="Views\Donate\Donate.cshtml" />
     <Content Include="Views\Home\PatientTestimonial.cshtml" />
-    <Content Include="Views\GetInvolved\VolunteerComment.cshtml" />
     <Content Include="Views\EventCreator\EventCreator.cshtml" />
     <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
-    <Content Include="Views\PatientReferral\PatientReferralPasswordPage.cshtml" />
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
+    <Content Include="Views\LandingPage\LandingPage.cshtml" />
+    <Content Include="Views\Calendar\Calendar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -501,6 +509,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801232030274_AddGPAtoStudents.resx">
       <DependentUpon>201801232030274_AddGPAtoStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802272018543_clean.resx">
+      <DependentUpon>201802272018543_clean.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\WebApplication3.Migrations.AddGPAtoStudents.resources" />
     <EmbeddedResource Include="obj\Debug\WebApplication3.Migrations.InitialCreate.resources" />

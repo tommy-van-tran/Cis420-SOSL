@@ -7,6 +7,7 @@ namespace WebApplication3.Models
 {
     public class MedicalInterpreterModel
     {
+        public int ID { get; set; }
         string FirstName { get; set; }
         string LastName { get; set; }
         string Address { get; set; }
