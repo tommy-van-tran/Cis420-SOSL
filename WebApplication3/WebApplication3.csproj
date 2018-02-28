@@ -201,6 +201,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NonClinicalController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
+    <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -486,6 +487,7 @@
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
     <Content Include="Views\LandingPage\LandingPage.cshtml" />
     <Content Include="Views\Calendar\Calendar.cshtml" />
+    <Content Include="Views\Tables\Tables.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
