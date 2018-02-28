@@ -449,7 +449,7 @@ namespace WebApplication3.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("LandingPage", "LandingPage");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
