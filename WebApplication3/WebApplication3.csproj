@@ -196,6 +196,7 @@
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\GetInvolvedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingPageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Global.asax.cs">
@@ -208,6 +209,10 @@
     <Compile Include="Migrations\201801232030274_AddGPAtoStudents.cs" />
     <Compile Include="Migrations\201801232030274_AddGPAtoStudents.Designer.cs">
       <DependentUpon>201801232030274_AddGPAtoStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802272018543_clean.cs" />
+    <Compile Include="Migrations\201802272018543_clean.Designer.cs">
+      <DependentUpon>201802272018543_clean.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -476,6 +481,7 @@
     <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
     <Content Include="Views\PatientReferral\PatientReferralPasswordPage.cshtml" />
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
+    <Content Include="Views\LandingPage\LandingPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -501,6 +507,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801232030274_AddGPAtoStudents.resx">
       <DependentUpon>201801232030274_AddGPAtoStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802272018543_clean.resx">
+      <DependentUpon>201802272018543_clean.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\WebApplication3.Migrations.AddGPAtoStudents.resources" />
     <EmbeddedResource Include="obj\Debug\WebApplication3.Migrations.InitialCreate.resources" />
