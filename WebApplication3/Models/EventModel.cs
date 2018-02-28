@@ -12,12 +12,6 @@ namespace WebApplication3.Models
         string EventLocation { get; set; }
         DateTime EventDate { get; set; }
         ReferAPatientModel Patient { get; set; }
-        MedicalInterpreterModel[] Interpreter { get; set; }
-        NonPhysicianClinicalVolunteerModel[] ClinicalVolunteer{get;set;}
-        NonClinicalGeneralVolunteerModel[] NonClinicalVolunteer { get; set; }
-        PhysicianVolunteerModel[] Physician { get; set; }
-
-
 
     }
 }

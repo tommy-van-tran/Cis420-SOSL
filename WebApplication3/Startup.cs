@@ -23,9 +23,11 @@ namespace WebApplication3
 
 
 
+            var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
 
-            var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
 
 
