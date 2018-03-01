@@ -8,10 +8,9 @@ namespace WebApplication3.Models
     public class EventModel
     {
         public int ID { get; set; }
-        string EventSurgery { get; set; }
-        string EventLocation { get; set; }
-        string EventDate { get; set; }
-        ReferAPatientModel Patient { get; set; }
+        public string EventSurgery { get; set; }
+        public string EventLocation { get; set; }
+        public string EventDate { get; set; }
 
     }
 }

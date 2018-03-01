@@ -10,7 +10,6 @@ namespace WebApplication3.Models
         public int ID { get; set; }
         public string EventSurgery { get; set; }
         public string EventLocation { get; set; }
-         public DateTime EventDate { get; set; }
-        public ReferAPatientModel Patient { get; set; }
+         public string EventDate { get; set; }
     }
 }

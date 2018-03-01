@@ -5,12 +5,12 @@
 }
 
 
-@using (Html.BeginForm("NonClinical", "GetInvolved", FormMethod.Post))
+@using (Html.BeginForm("EventCreator", "EventCreator", FormMethod.Post))
 
 
-
-<h2><Font color="Crimson">Create an Event</Font></h2>
-
+{
+<h2><Font color="Crimson" style="padding-left:5vw">Create an Event</Font></h2>
+<div style="padding-left:5vw">
 <form>
     <label>Event Name</label>
     <div>
@@ -27,11 +27,9 @@
     <div>
         @Html.TextBoxFor(Model => Model.EventDate)
     </div>
-
-    <label>Patient</label>
-    <div>
-        @Html.TextBoxFor(Model => Model.Patient)
-    </div>
+    <br />
+    <div style="padding-left:5vw; padding-right:5vw"><input type="submit" id="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
 
 </form>
-
+    </div>
+}
