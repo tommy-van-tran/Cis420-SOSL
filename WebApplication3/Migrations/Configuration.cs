@@ -10,6 +10,7 @@ namespace WebApplication3.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            
             ContextKey = "WebApplication3.Models.ApplicationDbContext";
         }
 
