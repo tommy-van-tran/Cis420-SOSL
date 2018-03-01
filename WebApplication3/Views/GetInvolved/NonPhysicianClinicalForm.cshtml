@@ -83,175 +83,131 @@
 
                             <label>First Name</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.FirstName)
                             </div>
 
                             <label>Last Name</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.LastName)
+
                             </div>
 
 
                             <label>Address</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.Address)
                             </div>
 
                             <label>City</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.City)
                             </div>
 
                             <label>State</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.State)
                             </div>
 
                             <label>Postal Code</label>
                             <div>
-                                <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.PostalCode)
                             </div>
 
                             <label>Mobile Phone</label>
                             <div>
-                                <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+                                @Html.TextBoxFor(Model => Model.PhoneNumber)
                             </div>
 
                             <label>Email</label>
                             <div>
-                                <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.Email)
                             </div>
 
                             <label>Birthday</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.Birthday)
+                            </div>
+
+                            <label>What is/are your professional title(s)</label>
+
+
+                            <div>
+                                @Html.DropDownListFor(model => Model.ProfessionalTitles, new SelectList(new List<Object>{
+new { value = 0, text = "Surgical Technician"  },
+new { value = 1 , text = "CRNA" },
+new { value = 2 , text = "RN"},
+new { value = 3, text = "CNA"},
+new { value = 4, text = "PCA"},
+new { value = 5, text = "PA"},
+new { value = 6, text = "EMT"},
+new { value = 7, text = "COA"},
+new { value = 8, text = "COT"},
+new { value = 9, text = "APRN"},
+new { value = 10, text = "Other"},
+new { value = 11, text = "No Applicable Profession"},
+}, "text",
+
+"text",
+0))
                             </div>
 
 
-                            <div class="control_row">
-                                <label>What is/are your professional title(s)</label>
-                                <br />
-                            </div>
-
-                            <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="Surgical Technician">Surgical Technician</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="CRNA">CRNA</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="RN">RN</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="CNA">CNA</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="PCA">PCA</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="PA">PA</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="EMT">EMT</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="COA">COA</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="COT">COT</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="APRN">APRN</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="OTHER">OTHER</label></div>
-                                <div class="checkbox"><label><input name="titleType[]" type="checkbox" value="No Applicable Professional Title">No Applicable Professional Title</label></div>
-                            </div>
-
-                            <div class="control_row">
-                                <label> What/which state(s) are you licensed to practice in? </label>
-                                <br />
-
-                                <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AK">Alaska</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AL">Alabama</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AR">Arkansas</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AZ">Arizona</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CA">California</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CO">Colorado</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CT">Connecticut</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DC">District Of Columbia</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DE">Delaware</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="FL">Florida</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="GA">Georgia</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="HI">Hawaii</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IA">Iowa</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ID">Idaho</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IL">Illinois</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IN">Indiana</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KS">Kansas</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KY">Kentucky</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="LA">Louisiana</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MA">Massachusetts</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MD">Maryland</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ME">Maine</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MI">Michigan</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MN">Minnesota</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MO">Missouri</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MS">Mississippi</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MT">Montana</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NC">North Carolina</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ND">North Dakota</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NE">Nebraska</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NH">New Hampshire</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NJ">New Jersey</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NM">New Mexico</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NV">Nevada</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NY">New York</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OH">Ohio</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OK">Oklahoma</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OR">Oregon</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="PA">Pennsylvania</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="RI">Rhode Island</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SC">South Carolina</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SD">South Dakota</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TN">Tennessee</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TX">Texas</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="UT">Utah</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VA">Virginia</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VT">Vermont</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WA">Washington</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WI">Wisconsin</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WV">West Virginia</label></div>
-                                    <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WY">Wyoming</label></div>
+                            
+                                <label> What/which state are you licensed to practice in? </label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.StateLicensedIn)
                                 </div>
-                            </div>
 
                             <label>Professional license Number</label>
                             <div>
-                                <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+                                @Html.TextBoxFor(Model => Model.ProfessionalLicenseNumber)
                             </div>
 
 
-                            <div class="control_row">
-                                <label>Area of Specialty</label>
-                                <br />
+
+                            <label>Area of Specialty</label>
+
+                            <div>
+                                @Html.DropDownListFor(model => Model.AreaOfSpecialty, new SelectList(new List<Object>{
+new { value = 0, text = "Pre-Op"  },
+new { value = 1 , text = "PACU" },
+new { value = 2 , text = "Circulation "},
+new { value = 3, text = "Surgery (Scrub-Tech/Nurse)"},
+new { value = 4, text = "Recovery"},
+
+}, "text",
+
+"text",
+0))
                             </div>
 
-                            <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
-                                <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Pre-Op">Pre-Op</label></div>
-                                <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="PACU">PACU</label></div>
-                                <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Circulation">Circulation</label></div>
-                                <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Surgery (Scrub Tech/Nurse)">Surgery (Scrub Tech/Nurse)</label></div>
-                                <div class="checkbox"><label><input name="specialtyType[]" type="checkbox" value="Recovery">Recovery</label></div>
-                            </div>
 
 
-                            <div class="control_row">
-                                <div class="control-group select required registration_person_custom_field_answers_12895">
-                                    <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
-                                        <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
-                                            <option value="">Select...</option>
-                                            <option value="XS">XS</option>
-                                            <option value="S">S</option>
-                                            <option value="M">M</option>
-                                            <option value="L">L</option>
-                                            <option value="XL">XL</option>
-                                            <option value="XXL">XXL</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            <label>What is your T-Shirt Size?</label>
+                            <div>
+                                @Html.DropDownListFor(model => Model.TShirtSize, new SelectList(
+                   new List<Object>{
+              new { value = 0, text = "S"  },
+              new { value = 1 , text = "M" },
+              new { value = 2 , text = "L"},
+              new { value = 3, text = "XL"},
+              new {value = 4, text = "2XL"}
+                   },
+                   "text",
+                   "text",
+                    0))
                             </div>
+</div>
 
 
                             <br />
 
                             <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
-                        </form>
-                    </div>
-                </div>
+                        
+                    
+                
 
-            </div>
+            
 </body>
 
 

@@ -14,14 +14,14 @@ namespace WebApplication3.Models
         public string Address { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public string ZipCode { get; set; }
-        public string PrimaryPhone { get; set; }
+        public string PostalCode { get; set; }
+        public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public string DateOfBirth { get; set; }
-        public string[] ProfessionalTitles { get; set; }
-        public string[] StatesLicensedIn { get; set; }
+        public string Birthday { get; set; }
+        public string ProfessionalTitles { get; set; }
+        public string StateLicensedIn { get; set; }
         public string ProfessionalLicenseNumber { get; set; }
-        public string[] AreaOfSpecialty { get; set; }
-        public string ShirtSize { get;set; }
+        public string AreaOfSpecialty { get; set; }
+        public string TShirtSize { get; set; }
     }
 }

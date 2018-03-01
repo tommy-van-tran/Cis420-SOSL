@@ -109,15 +109,15 @@ namespace WebApplication3.Controllers
                Address = viewModel.Address,
                City = viewModel.City,
                State = viewModel.State,
-               ZipCode = viewModel.ZipCode,
-               PrimaryPhone = viewModel.PrimaryPhone,
+               PostalCode = viewModel.PostalCode,
+               PhoneNumber = viewModel.PhoneNumber,
                Email = viewModel.Email,
-               DateOfBirth = viewModel.DateOfBirth,
+               Birthday = viewModel.Birthday,
                ProfessionalTitles = viewModel.ProfessionalTitles,
-               StatesLicensedIn = viewModel.StatesLicensedIn,
+               StateLicensedIn = viewModel.StateLicensedIn,
                ProfessionalLicenseNumber = viewModel.ProfessionalLicenseNumber,
                AreaOfSpecialty = viewModel.AreaOfSpecialty,
-               ShirtSize = viewModel.ShirtSize,
+               TShirtSize = viewModel.TShirtSize,
               
                 
             };
