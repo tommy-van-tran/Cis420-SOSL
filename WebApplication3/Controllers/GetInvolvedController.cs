@@ -142,6 +142,39 @@ namespace WebApplication3.Controllers
             return RedirectToAction("GetInvolved", "GetInvolved");
 
         }
+
+
+       public ActionResult MedicalInterpreter(MedicalInterpreterViewModel viewModel)
+        {
+            var MedicalInterpreter = new MedicalInterpreterModel()
+            {
+               
+            ID = viewModel.ID,
+            FirstName = viewModel.FirstName,
+            LastName = viewModel.LastName,
+            Address = viewModel.Address,
+            City = viewModel.City,
+            State = viewModel.State,
+            ZipCode = viewModel.ZipCode, 
+            PrimaryPhone = viewModel.PrimaryPhone,
+            Email = viewModel.Email,
+            DateOfBirth = viewModel.DateOfBirth, 
+            PreferredName = viewModel.PreferredName, 
+            Languages = viewModel.Languages,
+
+
+            };
+            db.MedicalInterpreters.Add(MedicalInterpreter);
+
+            db.SaveChanges();
+
+            return RedirectToAction("GetInvolved", "GetInvolved");
+
+
+
+        }
+
+
         public ActionResult VolunteerComment()
         {
             return View();

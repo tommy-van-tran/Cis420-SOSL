@@ -225,6 +225,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MedicalInterpreterModel.cs" />
+    <Compile Include="Models\MedicalInterpreterViewModel.cs" />
     <Compile Include="Models\NonClinicalModel.cs" />
     <Compile Include="Models\NonClinicalViewModel.cs" />
     <Compile Include="Models\NonPhysicianClinicalModel.cs" />

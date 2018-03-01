@@ -1,9 +1,13 @@
-﻿
+﻿@model WebApplication3.Models.MedicalInterpreterModel
 @{
     ViewBag.Title = "InterpreterForm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<br />
+
+
+@using (Html.BeginForm("MedicalInterpreter", "GetInvolved", FormMethod.Post))
+
+    <br />
 <h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Medical Interpreter Volunteer Form</h2>
 <div style="padding-left:5vw">
     <span class='right-header-link'>
@@ -71,6 +75,62 @@
         <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Hindi">Hindi</label></div>
         <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Arabic">Arabic</label></div>
         <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Other">Other</label></div>
+    </div>
+
+
+    <label>First Name</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.FirstName)
+    </div>
+
+    <label>LastName</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.LastName)
+    </div>
+
+    <label>Address</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.Address)
+    </div>
+
+    <label>City</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.City)
+    </div>
+
+    <label>State</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.State)
+    </div>
+
+    <label>Postal Code</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.ZipCode)
+    </div>
+
+    <label>Mobile Phone</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.PrimaryPhone)
+    </div>
+
+    <label>Birthday</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.DateOfBirth)
+    </div>
+
+    <label>Preferred Name</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.PreferredName)
+    </div>
+
+
+
+    <label>What/Which Language(s) can you interpret for?</label>
+    <div style="height:10vw;width:12vw;border:1px solid #ccc;overflow:auto;">
+        <div>@Html.CheckBoxFor(Model => Model.Spanish)<label>Spanish</label></div>
+        <div>@Html.CheckBoxFor(Model => Model.Hindi)<label>Hindi</label></div>
+        <div>@Html.CheckBoxFor(Model => Model.Arabic)<label>Arabic</label></div>
+        <div>@Html.CheckBoxFor(Model => Model.Other)<label>Other</label></div>
     </div>
 
 

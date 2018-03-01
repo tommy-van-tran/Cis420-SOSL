@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebApplication3.Models
 {
-    public class MedicalInterpreterModel
+    public class MedicalInterpreterViewModel
     {
         public int ID { get; set; }
         public string FirstName { get; set; }
