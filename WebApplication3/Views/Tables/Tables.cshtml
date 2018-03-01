@@ -75,24 +75,299 @@
 
         @foreach (var item in (ICollection<NonClinicalModel>)ViewBag.NonClinicals)
         {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.City</td>
+                <td>@item.State</td>
+                <td>@item.Address</td>
+                <td>@item.PostalCode</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Email</td>
+                <td>@item.Birthday</td>
+                <td>@item.PreferredName</td>
+                <td>@item.BestDescription</td>
+                <td>@item.Registration</td>
+                <td>@item.Cleaning</td>
+                <td>@item.ClinicalShadowing</td>
+                <td>@item.Fundraising </td>
+                <td>@item.WhyInterested </td>
+                <td>@item.TShirtSize </td>
+
+
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+<h1>Non-Physician Clinical Volunteers</h1>
+<table class="table">
+    <thead>
         <tr>
-            <td>@item.FirstName</td>
-            <td>@item.LastName</td>
-            <td>@item.City</td>
-            <td>@item.State</td>
-            <td>@item.Address</td>
-            <td>@item.PostalCode</td>
-            <td>@item.PhoneNumber</td>
-            <td>@item.Email</td>
-            <td>@item.Birthday</td>
-            <td>@item.PreferredName</td>
-            <td>@item.BestDescription</td>
-            <td>@item.Registration</td>
-            <td>@item.Cleaning</td>
-            <td>@item.ClinicalShadowing</td>
-            <td>@item.Fundraising </td>
-            <td>@item.WhyInterested </td>
-            <td>@item.TShirtSize </td>
+            <td><b>First Name</b></td>
+            <td><b>Last Name</b></td>
+            <td><b>Address</b></td>
+            <td><b>City</b></td>
+            <td><b>State</b></td>
+            <td><b>Postal Code</b></td>
+            <td><b>Phone Number</b></td>
+            <td><b>Email</b></td>
+            <td><b>Birthday</b></td>
+            <td><b>Professional License Number</b></td>
+            <td><b>TShirt Size</b></td>
+            <td><b>Surgical Technician</b></td>
+            <td><b>CRNA</b></td>
+            <td><b>RN</b></td>
+            <td><b>CNA</b></td>
+            <td><b>PCA</b></td>
+            <td><b>PA</b></td>
+            <td><b>EMT</b></td>
+            <td><b>COA</b></td>
+            <td><b>COT</b></td>
+            <td><b>APRN</b></td>
+            <td><b>Other</b></td>
+            <td><b>Not Applicable</b></td>
+            <td><b>Pre-Op</b></td>
+            <td><b>PACU</b></td>
+            <td><b>Circulation</b></td>
+            <td><b>Surgery</b></td>
+            <td><b>Recovery</b></td>
+
+
+
+
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+
+        @foreach (var item in (ICollection<NonPhysicianClinicalModel>)ViewBag.NonPhyiscianClinicals)
+        {
+            <tr>
+                <td>
+                    @item.FirstName
+                </td>
+                <td>
+                    @item.LastName
+                </td>
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    @item.City
+                </td>
+                <td>
+                    @item.State
+                </td>
+                <td>
+                    @item.PostalCode
+                </td>
+                <td>
+                    @item.PhoneNumber
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.Birthday
+                </td>
+
+                <td>
+                    @item.ProfessionalLicenseNumber
+                </td>
+                <td>
+                    @item.TShirtSize
+                </td>
+                <td>
+                    @item.SurgicalTechnician
+                </td>
+                <td>
+                    @item.CRNA
+                </td>
+                <td>
+                    @item.RN
+                </td>
+                <td>
+                    @item.CNA
+                </td>
+                <td>
+                    @item.PCA
+                </td>
+                <td>
+                    @item.PA
+                </td>
+                <td>
+                    @item.EMT
+                </td>
+                <td>
+                    @item.COA
+                </td>
+                <td>
+                    @item.COT
+                </td>
+                <td>
+                    @item.APRN
+                </td>
+                <td>
+                    @item.Other
+                </td>
+                <td>
+                    @item.NotApplicable
+                </td>
+                <td>
+                    @item.PreOp
+                </td>
+                <td>
+                    @item.PACU
+                </td>
+                <td>
+                    @item.Circulation
+                </td>
+                <td>
+                    @item.Surgery
+                </td>
+                <td>@item.Recovery</td>
+
+
+
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+<h1>Physicians</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                <b>
+                    First Name
+                </b>
+            </td>
+            <td>
+                <b>
+                    Last Name
+                </b>
+            </td>
+            <td>
+                <b>
+                    Address
+                </b>
+            </td>
+            <td>
+                <b>
+                    City
+                </b>
+            </td>
+            <td>
+                <b>
+                    State
+                </b>
+            </td>
+            <td>
+                <b>
+                    Zip Code
+                </b>
+            </td>
+            <td>
+                <b>
+                    Primary Phone
+                </b>
+            </td>
+            <td>
+                <b>
+                    Email
+                </b>
+            </td>
+            <td>
+                <b>
+                    Date Of Birth
+                </b>
+            </td>
+            <td>
+                <b>
+                    Medical Specialty
+                </b>
+            </td>
+            <td>
+                <b>
+                    Professional LicenseNumber
+                </b>
+            </td>
+            <td>
+                <b>
+                    Professional AlmaMater
+                </b>
+            </td>
+            <td><b>Graduation Year</b></td>
+
+
+
+
+
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+
+        @foreach (var item in (ICollection<PhysicianModel>)ViewBag.Physicians)
+        {
+        <tr>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                @item.City
+            </td>
+            <td>
+                @item.State
+            </td>
+            <td>
+                @item.ZipCode
+            </td>
+            <td>
+                @item.PrimaryPhone
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.DateOfBirth
+            </td>
+            
+            <td>
+                @item.MedicalSpecialty
+            </td>
+           
+            <td>
+                @item.ProfessionalLicenseNumber
+            </td>
+            <td>
+                @item.ProfessionalAlmaMater
+            </td>
+            <td>@item.GraduationYear</td>
 
 
 

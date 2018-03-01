@@ -16,6 +16,10 @@ namespace WebApplication3.Controllers
             ViewBag.EventModels = eventModels;
             var nonClinical = db.NonClinicals.ToList();
             ViewBag.NonClinicals = nonClinical;
+            var nonPhysicianClinical = db.NonPhysicianClinicals.ToList();
+            ViewBag.NonPhyiscianClinicals = nonPhysicianClinical;
+            var physician = db.Physicians.ToList();
+            ViewBag.Physicians = physician;
             return View();
         }
     }

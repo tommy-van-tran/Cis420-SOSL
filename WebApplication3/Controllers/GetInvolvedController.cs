@@ -113,6 +113,7 @@ namespace WebApplication3.Controllers
                 Email = viewModel.Email,
                 Birthday = viewModel.Birthday,
                 SurgicalTechnician = viewModel.SurgicalTechnician,
+                ProfessionalLicenseNumber=viewModel.ProfessionalLicenseNumber,
                 CRNA = viewModel.CRNA,
                 RN = viewModel.RN,
                 CNA = viewModel.CNA,
