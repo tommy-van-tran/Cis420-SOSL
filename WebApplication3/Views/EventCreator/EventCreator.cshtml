@@ -1,17 +1,35 @@
-﻿
+﻿@model WebApplication3.Models.EventViewModel
 @{
-    ViewBag.Title = "EventCreator";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+                ViewBag.Title = "EventCreator";
+                Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2><Font color="Crimson">Create an Event</Font></h2>
 
+@using (Html.BeginForm("Event", "EventCreator", FormMethod.Post))
+
+
+{
+<h2><Font color="Crimson" style="padding-left:5vw">Create an Event</Font></h2>
+<div style="padding-left:5vw">
 <form>
-    <p>Event Name:     <input type="text" title="Event Name" /></p>
-    <p>Event Location: <input type="text" title="Event Location" /></p>
-    <p>Event Date:     <input type="date" title="Event Date" /></p>
-    <p>Event Time:     <input type="time" title="Event Time" /></p>
-    <p><input type="button" value="Create Event" /></p>
+    <label>Event Name</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.EventSurgery)
+    </div>
+
+
+    <label>Location</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.EventLocation)
+    </div>
+
+    <label>Date</label>
+    <div>
+        @Html.TextBoxFor(Model => Model.EventDate)
+    </div>
+    <br />
+    <div style="padding-left:5vw; padding-right:5vw"><input type="submit" id="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
 
 </form>
-
+    </div>
+}
