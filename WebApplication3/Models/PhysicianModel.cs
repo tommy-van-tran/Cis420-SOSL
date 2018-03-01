@@ -19,7 +19,7 @@ namespace WebApplication3.Models
         public string Email { get; set; }
         public string DateOfBirth { get; set; }
         public string MedicalSpecialty { get; set; }
-        public string[] StatesLicensedIn { get; set; }
+        public string[] StateChoice { get; set; }
         public string ProfessionalLicenseNumber { get; set; }
         public string ProfessionalAlmaMater { get; set; }
         public string GraduationYear { get; set; }
