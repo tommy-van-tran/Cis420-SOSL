@@ -328,6 +328,144 @@
 
         @foreach (var item in (ICollection<PhysicianModel>)ViewBag.Physicians)
         {
+            <tr>
+                <td>
+                    @item.FirstName
+                </td>
+                <td>
+                    @item.LastName
+                </td>
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    @item.City
+                </td>
+                <td>
+                    @item.State
+                </td>
+                <td>
+                    @item.ZipCode
+                </td>
+                <td>
+                    @item.PrimaryPhone
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.DateOfBirth
+                </td>
+
+                <td>
+                    @item.MedicalSpecialty
+                </td>
+
+                <td>
+                    @item.ProfessionalLicenseNumber
+                </td>
+                <td>
+                    @item.ProfessionalAlmaMater
+                </td>
+                <td>@item.GraduationYear</td>
+
+
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+<h1>Interpreters</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                <b>
+                    FirstName
+                </b>
+            </td>
+            <td>
+                <b>
+                    LastName
+                </b>
+            </td>
+            <td>
+                <b>
+                    Address
+                </b>
+            </td>
+            <td>
+                <b>
+                    City
+                </b>
+            </td>
+            <td>
+                <b>
+                    State
+                </b>
+            </td>
+            <td>
+                <b>
+                    ZipCode
+                </b>
+            </td>
+            <td>
+                <b>
+                    PrimaryPhone
+                </b>
+            </td>
+            <td>
+                <b>
+                    Email
+                </b>
+            </td>
+            <td>
+                <b>
+                    DateOfBirth
+                </b>
+            </td>
+            <td>
+                <b>
+                    PreferredName
+                </b>
+            </td>
+            <td>
+                <b>
+                    Spanish
+                </b>
+            </td>
+            <td>
+                <b>
+                    Arabic
+                </b>
+            </td>
+            <td>
+                <b>
+                    Hindi
+                </b>
+            </td>
+            <td><b>Other</b></td>
+
+
+
+
+
+
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+
+        @foreach (var item in (ICollection<MedicalInterpreterModel>)ViewBag.MedicalInterpreters)
+        {
         <tr>
             <td>
                 @item.FirstName
@@ -356,18 +494,22 @@
             <td>
                 @item.DateOfBirth
             </td>
-            
             <td>
-                @item.MedicalSpecialty
-            </td>
-           
-            <td>
-                @item.ProfessionalLicenseNumber
+                @item.PreferredName
             </td>
             <td>
-                @item.ProfessionalAlmaMater
+                @item.Spanish
             </td>
-            <td>@item.GraduationYear</td>
+            <td>
+                @item.Arabic
+            </td>
+            <td>
+                @item.Hindi
+            </td>
+            <td>
+                @item.Other
+            </td>
+
 
 
 
