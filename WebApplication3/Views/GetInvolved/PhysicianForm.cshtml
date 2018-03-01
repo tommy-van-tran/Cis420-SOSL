@@ -25,7 +25,7 @@
 <div link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
     <label>First Name</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.FirstName)
     </div>
 
     <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
@@ -34,48 +34,48 @@
 
     <label>Last Name</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.LastName)
     </div>
 
 
     <label>Address</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.Address)
     </div>
 
     <label>City</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.City)
     </div>
 
     <label>State</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.State)
     </div>
 
     <label>Postal Code</label>
     <div>
-        <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.ZipCode)
     </div>
 
-    <label>Mobile Phone</label>
+    <label>Primary Phone</label>
     <div>
-        <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
+        @Html.TextBoxFor(Model => Model.PrimaryPhone)
     </div>
 
     <label>Email</label>
     <div>
-        <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.Email)
     </div>
 
     <label>Birthday</label>
     <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.DateOfBirth)
     </div>
 
     <label>Medical Specialty</label>
     <div>
-        <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.MedicalSpecialty)
     </div>
 
     <div>
@@ -83,75 +83,81 @@
         <br />
 
     </div>
-    <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AK">Alaska</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AL">Alabama</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AR">Arkansas</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="AZ">Arizona</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CA">California</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CO">Colorado</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="CT">Connecticut</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DC">District Of Columbia</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="DE">Delaware</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="FL">Florida</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="GA">Georgia</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="HI">Hawaii</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IA">Iowa</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ID">Idaho</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IL">Illinois</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="IN">Indiana</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KS">Kansas</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="KY">Kentucky</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="LA">Louisiana</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MA">Massachusetts</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MD">Maryland</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ME">Maine</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MI">Michigan</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MN">Minnesota</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MO">Missouri</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MS">Mississippi</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="MT">Montana</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NC">North Carolina</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="ND">North Dakota</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NE">Nebraska</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NH">New Hampshire</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NJ">New Jersey</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NM">New Mexico</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NV">Nevada</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="NY">New York</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OH">Ohio</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OK">Oklahoma</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="OR">Oregon</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="PA">Pennsylvania</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="RI">Rhode Island</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SC">South Carolina</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="SD">South Dakota</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TN">Tennessee</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="TX">Texas</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="UT">Utah</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VA">Virginia</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="VT">Vermont</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WA">Washington</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WI">Wisconsin</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WV">West Virginia</label></div>
-        <div class="checkbox"><label><input name="regionStates[]" type="checkbox" value="WY">Wyoming</label></div>
+    <div>
+        @Html.DropDownListFor(model => Model.StateChoice, new SelectList(
+ new List<Object>{
+                                                      new { value = 0, text = "AL"  },
+                                                      new { value = 1 , text = "AK" },
+                                                      new { value = 2 , text = "AZ"},
+                                                      new { value = 3, text = "AR"},
+                                                      new { value = 4, text = "CA"},
+                                                      new { value = 5, text = "CO"  },
+                                                      new { value = 6, text = "CT" },
+                                                      new { value = 7 , text = "DE"},
+                                                      new { value = 8, text = "DC"},
+                                                      new { value = 9, text = "FL"},
+                                                      new { value = 10, text = "GA"  },
+                                                      new { value = 11 , text = "HI" },
+                                                      new { value = 12 , text = "ID"},
+                                                      new { value = 13, text = "IL"},
+                                                      new { value = 14, text = "IN"},
+                                                      new { value = 15, text = "IA"  },
+                                                      new { value = 16, text = "KS" },
+                                                      new { value = 17 , text = "KY"},
+                                                      new { value = 18, text = "LA"},
+                                                      new { value = 19, text = "ME"},
+                                                      new { value = 20, text = "MD"  },
+                                                      new { value = 21, text = "MA" },
+                                                      new { value = 22 , text = "MI"},
+                                                      new { value = 23, text = "MN"},
+                                                      new { value = 24, text = "MS"},
+                                                      new { value = 25, text = "MO"  },
+                                                      new { value = 26, text = "MT" },
+                                                      new { value = 27, text = "NE"},
+                                                      new { value = 28, text = "NV"},
+                                                      new { value = 29, text = "NH"},
+                                                      new { value = 30, text = "NJ"  },
+                                                      new { value = 31, text = "NM" },
+                                                      new { value = 32, text = "NY"},
+                                                      new { value = 33, text = "NC"},
+                                                      new { value = 34, text = "ND"},
+                                                      new { value = 35, text = "OH"  },
+                                                      new { value = 36, text = "OK" },
+                                                      new { value = 37, text = "OR"},
+                                                      new { value = 38, text = "PA"},
+                                                      new { value = 39, text = "RI"},
+                                                      new { value = 40, text = "SC"  },
+                                                      new { value = 41, text = "SD" },
+                                                      new { value = 42 , text = "TN"},
+                                                      new { value = 43, text = "TX"},
+                                                      new { value = 44, text = "UT"},
+                                                      new { value = 45, text = "VT"  },
+                                                      new { value = 46, text = "VA" },
+                                                      new { value = 47, text = "WA"},
+                                                      new { value = 48, text = "WV"},
+                                                      new { value = 49, text = "WI"},
+                                                      new { value = 50, text = "WY"}
+ },
+ "value",
+ "text",
+ 0))
     </div>
 
 
 
     <label>Professional License Number</label>
     <div>
-        <div><input required maxlength="1000" aria-required="true" size="500" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.ProfessionalLicenseNumber)
     </div>
 
     <label>Professional Alma Mater</label>
     <div>
-        <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.ProfessionalAlmaMater)
     </div>
 
     <label>Graduation Year</label>
     <div>
-        <div><input required maxlength="1000" aria-required="true" size="1000" type="text" /></div>
+        @Html.TextBoxFor(Model => Model.GraduationYear)
     </div>
 
     <br />

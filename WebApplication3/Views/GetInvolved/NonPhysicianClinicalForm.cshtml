@@ -1,218 +1,234 @@
-﻿@model WebApplication3.Models.NonPhysicianClinicalViewModel
-
+﻿@model WebApplication3.Models.NonPhysicianClinicalModel
 @{
     ViewBag.Title = "NonPhysicianClinicalForm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using (Html.BeginForm("NonPhysician", "GetInvolved", FormMethod.Post))
 
-@using (Html.BeginForm("NonPhysicianClinical", "GetInvolved", FormMethod.Post))
-{
+{<br />
+    <h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Physician Clinical Volunteer Form</h2>
 
-<br />
-<h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Physician Clinical Volunteer Form</h2>
-
-
-<!doctype html>
-
-<head>
-
-</head>
-<body class="public_registrations new  theme-default main-menu-animated">
-    <!--[if lte IE 8]>
-    <style>
-      input {
-        font-family: Arial;
-      }
-    </style>
-    <![endif]-->
-
-    <script>var init = [];</script>
-    <div class='outer-wrapper'>
-        <div id="main-wrapper" class='full-width'>
-
-            <div id="header" class="public">
-                <div class="inner-content clearfix">
-                    <div class="pull-left logo">
-                        <div>
-
+    <!doctype html>
+    <head>
+    </head>
+    <body class="public_registrations new  theme-default main-menu-animated">
+        <!--[if lte IE 8]>
+        <style>
+          input {
+            font-family: Arial;
+          }
+        </style>
+        <![endif]-->
+        <script>var init = [];</script>
+        <div class='outer-wrapper'>
+            <div id="main-wrapper" class='full-width'>
+                <div id="header" class="public">
+                    <div class="inner-content clearfix">
+                        <div class="pull-left logo">
+                            <div>
+                            </div>
+                            <div id="account-user-session-container" style="padding-left:5vw; padding-right:5vw">
+                                <span class='right-header-link'>
+                                    <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
+                                    <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
+                                </span>
+                            </div>
                         </div>
-                        <div id="account-user-session-container" style="padding-left:5vw; padding-right:5vw">
-                            <span class='right-header-link'>
-                                <li><a href="/user/sign_in_or_sign_up">Are you a Donor? Sign In</a></li>
-                                <li><a href="/user/sign_in_or_sign_up">Create An Account</a></li>
-                            </span>
+                    </div>
+                    <div class='notices-wrapper'>
+                        <div class="notices ">
                         </div>
-
+                        <div class="errors ">
+                        </div>
+                        <div class="alerts ">
+                        </div>
                     </div>
-                </div>
-
-                <div class='notices-wrapper'>
-                    <div class="notices ">
-
-                    </div>
-                    <div class="errors ">
-                    </div>
-                    <div class="alerts ">
-                    </div>
-                </div>
 
 
+                    <!-- Main form -->
+                    <div class="grid-50 tablet-grid-50 mobile-grid-100" link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
+                        <div class="infoCard formPanel campaignInfo">
+                            <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                                <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GZobofcpjjAHk5/hqa7qpOL5CP/jJBGCZAJIQlfz80hnMabCxdoJhMvEHJItpkfPZxoi+XCJ5jpoMnw1MB3x3Q==" />
+                                <h2 id="registration_form_heading"></h2>
+                                <div id="error_explanation">
+                                    <ul></ul>
+                                </div>
+                                <input type="hidden" value="e99ba2ff-94b7-431c-a29b-28282c56b880" name="registration[registration_form_id]" id="registration_registration_form_id" />
 
+                                <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
 
-                <!-- Main form -->
-                <div class="grid-50 tablet-grid-50 mobile-grid-100" link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
-                    <div class="infoCard formPanel campaignInfo">
-                        <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
-                            <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GZobofcpjjAHk5/hqa7qpOL5CP/jJBGCZAJIQlfz80hnMabCxdoJhMvEHJItpkfPZxoi+XCJ5jpoMnw1MB3x3Q==" />
-
-                            <h2 id="registration_form_heading"></h2>
-
-                            <div id="error_explanation">
-                                <ul></ul>
-                            </div>
-
-                            <input type="hidden" value="e99ba2ff-94b7-431c-a29b-28282c56b880" name="registration[registration_form_id]" id="registration_registration_form_id" />
-
-
-                            <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
-
-
-                            <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
-                                This particular form is specifically for health care workers who provide direct care to patients, are not physicians, and who have licensed medical certifications e.g. RN’s, CRNA’s, APRN’s, LPN’s, etc or who provide some level of clinical care but are not licensed providers i.e. CNA’s, Scrub Tech’s, etc. All other individuals who work in a healthcare setting, including medical students, but who do not fall into the above two categories should complete the <a link href="~/GetInvolved/GeneralForm">General Non-Clinical Volunteer Form.</a>
-                            </div>
-
-                            <label>First Name</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.FirstName)
-                            </div>
-
-                            <label>Last Name</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.LastName)
-
-                            </div>
-
-
-                            <label>Address</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.Address)
-                            </div>
-
-                            <label>City</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.City)
-                            </div>
-
-                            <label>State</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.State)
-                            </div>
-
-                            <label>Postal Code</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.PostalCode)
-                            </div>
-
-                            <label>Mobile Phone</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.PhoneNumber)
-                            </div>
-
-                            <label>Email</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.Email)
-                            </div>
-
-                            <label>Birthday</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.Birthday)
-                            </div>
-
-                            <label>What is/are your professional title(s)</label>
-
-
-                            <div>
-                                @Html.DropDownListFor(model => Model.ProfessionalTitles, new SelectList(new List<Object>{
-new { value = 0, text = "Surgical Technician"  },
-new { value = 1 , text = "CRNA" },
-new { value = 2 , text = "RN"},
-new { value = 3, text = "CNA"},
-new { value = 4, text = "PCA"},
-new { value = 5, text = "PA"},
-new { value = 6, text = "EMT"},
-new { value = 7, text = "COA"},
-new { value = 8, text = "COT"},
-new { value = 9, text = "APRN"},
-new { value = 10, text = "Other"},
-new { value = 11, text = "No Applicable Profession"},
-}, "text",
-
-"text",
-0))
-                            </div>
-
-
-                            
-                                <label> What/which state are you licensed to practice in? </label>
+                                <div id="right" style="float:right; width:50%; position:fixed; top:10vw; right:5vw; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:1vw">
+                                    This particular form is specifically for health care workers who provide direct care to patients, are not physicians, and who have licensed medical certifications e.g. RN’s, CRNA’s, APRN’s, LPN’s, etc or who provide some level of clinical care but are not licensed providers i.e. CNA’s, Scrub Tech’s, etc. All other individuals who work in a healthcare setting, including medical students, but who do not fall into the above two categories should complete the <a link href="~/GetInvolved/GeneralForm">General Non-Clinical Volunteer Form.</a>
+                                </div>
+                                <label>First Name</label>
                                 <div>
-                                    @Html.TextBoxFor(Model => Model.StateLicensedIn)
+                                    @Html.TextBoxFor(Model => Model.FirstName)
+                                </div>
+                                <label>Last Name</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.LastName)
                                 </div>
 
-                            <label>Professional license Number</label>
-                            <div>
-                                @Html.TextBoxFor(Model => Model.ProfessionalLicenseNumber)
-                            </div>
+                                <label>Address</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.Address)
+                                </div>
+                                <label>City</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.City)
+                                </div>
+                                <label>State</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.State)
+                                </div>
+                                <label>Postal Code</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.PostalCode)
+                                </div>
+                                <label>Mobile Phone</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.PhoneNumber)
+                                </div>
+                                <label>Email</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.Email)
+                                </div>
+                                <label>Birthday</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.Birthday)
+                                </div>
+
+                                <div class="control_row">
+                                    <label>What is/are your professional title(s)</label>
+                                    <br />
+                                </div>
+
+                                <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+                                    <div>@Html.CheckBoxFor(Model => Model.SurgicalTechnician)</div><label>Surgical Technician</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.CRNA)</div><label>CRNA</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.RN)</div><label>RN</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.CNA)</div><label>CNA</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.PCA)</div><label>PCA</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.PA)</div><label>PA</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.EMT)</div><label>EMT</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.COA)</div><label>COA</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.COT)</div><label>COT</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.APRN)</div><label>APRN</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.Other)</div><label>Other</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.NotApplicable)</div><label>No Applicable Professional Title</label>
+                                </div>
 
 
-
-                            <label>Area of Specialty</label>
-
-                            <div>
-                                @Html.DropDownListFor(model => Model.AreaOfSpecialty, new SelectList(new List<Object>{
-new { value = 0, text = "Pre-Op"  },
-new { value = 1 , text = "PACU" },
-new { value = 2 , text = "Circulation "},
-new { value = 3, text = "Surgery (Scrub-Tech/Nurse)"},
-new { value = 4, text = "Recovery"},
-
-}, "text",
-
+                                <div class="control_row">
+                                    <label> What/which state(s) are you licensed to practice in? </label>
+                                    <br />
+                                    <div>
+                                        @Html.DropDownListFor(model => Model.StateChoice, new SelectList(
+new List<Object>{
+                                                                  new { value = 0, text = "AL"  },
+                                                                  new { value = 1 , text = "AK" },
+                                                                  new { value = 2 , text = "AZ"},
+                                                                  new { value = 3, text = "AR"},
+                                                                  new { value = 4, text = "CA"},
+                                                                  new { value = 5, text = "CO"  },
+                                                                  new { value = 6, text = "CT" },
+                                                                  new { value = 7 , text = "DE"},
+                                                                  new { value = 8, text = "DC"},
+                                                                  new { value = 9, text = "FL"},
+                                                                  new { value = 10, text = "GA"  },
+                                                                  new { value = 11 , text = "HI" },
+                                                                  new { value = 12 , text = "ID"},
+                                                                  new { value = 13, text = "IL"},
+                                                                  new { value = 14, text = "IN"},
+                                                                  new { value = 15, text = "IA"  },
+                                                                  new { value = 16, text = "KS" },
+                                                                  new { value = 17 , text = "KY"},
+                                                                  new { value = 18, text = "LA"},
+                                                                  new { value = 19, text = "ME"},
+                                                                  new { value = 20, text = "MD"  },
+                                                                  new { value = 21, text = "MA" },
+                                                                  new { value = 22 , text = "MI"},
+                                                                  new { value = 23, text = "MN"},
+                                                                  new { value = 24, text = "MS"},
+                                                                  new { value = 25, text = "MO"  },
+                                                                  new { value = 26, text = "MT" },
+                                                                  new { value = 27, text = "NE"},
+                                                                  new { value = 28, text = "NV"},
+                                                                  new { value = 29, text = "NH"},
+                                                                  new { value = 30, text = "NJ"  },
+                                                                  new { value = 31, text = "NM" },
+                                                                  new { value = 32, text = "NY"},
+                                                                  new { value = 33, text = "NC"},
+                                                                  new { value = 34, text = "ND"},
+                                                                  new { value = 35, text = "OH"  },
+                                                                  new { value = 36, text = "OK" },
+                                                                  new { value = 37, text = "OR"},
+                                                                  new { value = 38, text = "PA"},
+                                                                  new { value = 39, text = "RI"},
+                                                                  new { value = 40, text = "SC"  },
+                                                                  new { value = 41, text = "SD" },
+                                                                  new { value = 42 , text = "TN"},
+                                                                  new { value = 43, text = "TX"},
+                                                                  new { value = 44, text = "UT"},
+                                                                  new { value = 45, text = "VT"  },
+                                                                  new { value = 46, text = "VA" },
+                                                                  new { value = 47, text = "WA"},
+                                                                  new { value = 48, text = "WV"},
+                                                                  new { value = 49, text = "WI"},
+                                                                  new { value = 50, text = "WY"}
+},
+"value",
 "text",
 0))
-                            </div>
+                                    </div>
 
 
 
-                            <label>What is your T-Shirt Size?</label>
-                            <div>
-                                @Html.DropDownListFor(model => Model.TShirtSize, new SelectList(
-                   new List<Object>{
-              new { value = 0, text = "S"  },
-              new { value = 1 , text = "M" },
-              new { value = 2 , text = "L"},
-              new { value = 3, text = "XL"},
-              new {value = 4, text = "2XL"}
-                   },
-                   "text",
-                   "text",
-                    0))
-                            </div>
-</div>
 
 
-                            <br />
+                                </div>
+                                <label>Professional license Number</label>
+                                <div>
+                                    @Html.TextBoxFor(Model => Model.LicenseNumber)
+                                </div>
 
-                            <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
-                        
-                    
-                
+                                <div class="control_row">
+                                    <label>Area of Specialty</label>
+                                    <br />
+                                </div>
+                                <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
+                                    <div>@Html.CheckBoxFor(Model => Model.PreOp)</div><label>Pre-Op</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.PACU)</div><label>PACU</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.Circulation)</div><label>Cicrulation</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.Surgery)</div><label>Surgery</label>
+                                    <div>@Html.CheckBoxFor(Model => Model.Recovery)</div><label>Recovery</label>
+                                </div>
 
-            
-</body>
+                                <label>What is your T-Shirt Size?</label>
+                                <div>
+                                    @Html.DropDownListFor(model => Model.TShirtSize, new SelectList(
+                                                    new List<Object>{
+                                                                                     new { value = 0, text = "S"  },
+                                                                                     new { value = 1 , text = "M" },
+                                                                                     new { value = 2 , text = "L"},
+                                                                                     new { value = 3, text = "XL"},
+                                                                                     new {value = 4, text = "2XL"}
+                                                    },
+                                                   "value",
+                                                   "text",
+                                                    0))
+                                </div>
 
-
-}
-
+                                <br />
+                                <input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
 
 

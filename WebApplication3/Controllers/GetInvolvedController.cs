@@ -85,7 +85,7 @@ namespace WebApplication3.Controllers
                 Email = viewModel.Email,
                 DateOfBirth = viewModel.DateOfBirth,
                 MedicalSpecialty = viewModel.MedicalSpecialty,
-                StatesLicensedIn = viewModel.StatesLicensedIn,
+                StateChoice = viewModel.StateChoice,
                 ProfessionalLicenseNumber = viewModel.ProfessionalLicenseNumber,
                 ProfessionalAlmaMater = viewModel.ProfessionalAlmaMater,
                 GraduationYear = viewModel.GraduationYear,
@@ -103,23 +103,36 @@ namespace WebApplication3.Controllers
         {
             var NonPhysicianClinical = new NonPhysicianClinicalModel()
             {
-               Id = viewModel.Id,
-               FirstName = viewModel.FirstName,
-               LastName = viewModel.LastName,
-               Address = viewModel.Address,
-               City = viewModel.City,
-               State = viewModel.State,
-               PostalCode = viewModel.PostalCode,
-               PhoneNumber = viewModel.PhoneNumber,
-               Email = viewModel.Email,
-               Birthday = viewModel.Birthday,
-               ProfessionalTitles = viewModel.ProfessionalTitles,
-               StateLicensedIn = viewModel.StateLicensedIn,
-               ProfessionalLicenseNumber = viewModel.ProfessionalLicenseNumber,
-               AreaOfSpecialty = viewModel.AreaOfSpecialty,
-               TShirtSize = viewModel.TShirtSize,
-              
-                
+                FirstName = viewModel.FirstName,
+                LastName = viewModel.LastName,
+                Address = viewModel.Address,
+                City = viewModel.City,
+                State = viewModel.State,
+                PostalCode = viewModel.PostalCode,
+                PhoneNumber = viewModel.PhoneNumber,
+                Email = viewModel.Email,
+                Birthday = viewModel.Birthday,
+                SurgicalTechnician = viewModel.SurgicalTechnician,
+                CRNA = viewModel.CRNA,
+                RN = viewModel.RN,
+                CNA = viewModel.CNA,
+                PCA = viewModel.PCA,
+                PA = viewModel.PA,
+                EMT = viewModel.EMT,
+                COA = viewModel.COA,
+                COT = viewModel.COT,
+                APRN = viewModel.APRN,
+                Other = viewModel.Other,
+                NotApplicable = viewModel.NotApplicable,
+                StateChoice = viewModel.StateChoice,
+                PreOp = viewModel.PreOp,
+                PACU = viewModel.PACU,
+                Circulation = viewModel.Circulation,
+                Surgery = viewModel.Surgery,
+                Recovery = viewModel.Recovery,
+                TShirtSize = viewModel.TShirtSize
+
+
             };
 
             db.NonPhysicianClinicals.Add(NonPhysicianClinical);
