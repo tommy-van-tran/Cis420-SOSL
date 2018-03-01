@@ -19,7 +19,7 @@ namespace WebApplication3.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Birthday { get; set; }
-        public string StateChoice { get; set; }
+        public string[] StateChoice { get; set; }
         public string ProfessionalLicenseNumber { get; set; }
         public string TShirtSize { get; set; }
         public bool SurgicalTechnician { get; set; }
