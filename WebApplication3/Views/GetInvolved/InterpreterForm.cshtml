@@ -6,7 +6,7 @@
 
 
 @using (Html.BeginForm("MedicalInterpreter", "GetInvolved", FormMethod.Post))
-
+{
     <br />
 <h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Medical Interpreter Volunteer Form</h2>
 <div style="padding-left:5vw">
@@ -16,67 +16,6 @@
     </span>
 </div>
 <br />
-
-<div link rel="stylesheet" type="text/css" href="~/Custom_CSS_Styles/inputboxes.css" style="padding-left:5vw; padding-right:5vw">
-    <label>First Name</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>Last Name</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-
-    <label>Address</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>City</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>State</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>Postal Code</label>
-    <div>
-        <div><input required maxlength="12" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>Mobile Phone</label>
-    <div>
-        <div><input required maxlength="15" aria-required="true" size="1000" type="tel" /></div>
-    </div>
-
-    <label>Email</label>
-    <div>
-        <div><input required maxlength="100" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>Birthday</label>
-    <div>
-        <div><input required maxlength="50" aria-required="true" size="1000" type="text" /></div>
-    </div>
-
-    <label>Preferred Name</label>
-    <div>
-        <div><input required maxlength="50" aria-required="false" size="1000" type="text" /></div>
-    </div>
-
-    <label>What/Which Language(s) can you interpret for?</label>
-    <div style="height:5vw;width:10vw;border:1px solid #ccc;overflow:auto;">
-        <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Spanish">Spanish</label></div>
-        <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Hindi">Hindi</label></div>
-        <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Arabic">Arabic</label></div>
-        <div class="checkbox"><label><input name="langSelect[]" type="checkbox" value="Other">Other</label></div>
-    </div>
-
 
     <label>First Name</label>
     <div>
@@ -138,4 +77,4 @@
 <br />
 <div style="padding-left:5vw; padding-right:5vw"><input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
 
-
+}

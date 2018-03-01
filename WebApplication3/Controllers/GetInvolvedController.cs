@@ -161,8 +161,10 @@ namespace WebApplication3.Controllers
             Email = viewModel.Email,
             DateOfBirth = viewModel.DateOfBirth, 
             PreferredName = viewModel.PreferredName, 
-            Languages = viewModel.Languages,
-
+            Spanish = viewModel.Spanish,
+            Arabic = viewModel.Arabic,
+            Hindi = viewModel.Hindi,
+            Other = viewModel.Other
 
             };
             db.MedicalInterpreters.Add(MedicalInterpreter);
