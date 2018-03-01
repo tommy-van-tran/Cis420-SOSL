@@ -1,156 +1,103 @@
-﻿
+﻿@using WebApplication3.Models;
 @{
     ViewBag.Title = "Tables";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<h1>Events</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td><b>Surgery</b></td>
+            <td><b>Location</b></td>
+            <td><b>Date</b></td>
 
-<?php
-$db_host = '184.168.194.75'; // Server Name
-$db_user = 'eqred'; // Username
-$db_pass = 'eq420red'; // Password
-$db_name = 'tutorial'; // Database Name
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-if (!$conn) {
-	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+        </tr>
 
-$sql = 'SELECT *
-		FROM dbo.NonClinicalModels';
 
-$query = mysqli_query($conn, $sql);
 
-if (!$query) {
-	die ('SQL Error: ' . mysqli_error($conn));
-}
-?>
-<html>
-<head>
-    <title>Displaying MySQL Data in HTML Table</title>
-    <style type="text/css">
-        body {
-            font-size: 15px;
-            color: #343d44;
-            font-family: "segoe-ui", "open-sans", tahoma, arial;
-            padding: 0;
-            margin: 0;
-        }
+    </thead>
+    <tbody>
 
-        table {
-            margin: auto;
-            font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
-            font-size: 12px;
-        }
-
-        h1 {
-            margin: 25px auto 0;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 17px;
-        }
-
-        table td {
-            transition: all .5s;
-        }
-
-        /* Table */
-        .data-table {
-            border-collapse: collapse;
-            font-size: 14px;
-            min-width: 537px;
-        }
-
-            .data-table th,
-            .data-table td {
-                border: 1px solid #e1edff;
-                padding: 7px 17px;
-            }
-
-            .data-table caption {
-                margin: 7px;
-            }
-
-            /* Table Header */
-            .data-table thead th {
-                background-color: #508abb;
-                color: #FFFFFF;
-                border-color: #6ea1cc !important;
-                text-transform: uppercase;
-            }
-
-            /* Table Body */
-            .data-table tbody td {
-                color: #353535;
-            }
-
-                .data-table tbody td:first-child,
-                .data-table tbody td:nth-child(4),
-                .data-table tbody td:last-child {
-                    text-align: right;
-                }
-
-            .data-table tbody tr:nth-child(odd) td {
-                background-color: #f4fbff;
-            }
-
-            .data-table tbody tr:hover td {
-                background-color: #ffffa2;
-                border-color: #ffff0f;
-            }
-
-            /* Table Footer */
-            .data-table tfoot th {
-                background-color: #e5f5ff;
-                text-align: right;
-            }
-
-                .data-table tfoot th:first-child {
-                    text-align: left;
-                }
-
-            .data-table tbody td:empty {
-                background-color: #ffcccc;
-            }
-    </style>
-</head>
-<body>
-    <h1>Table 1</h1>
-    <table class="data-table">
-        <caption class="title">Sales Data of Electronic Division</caption>
-        <thead>
+        @foreach (var item in (ICollection<EventModel>)ViewBag.EventModels)
+        {
             <tr>
-                <th>NO</th>
-                <th>CUSTOMER</th>
-                <th>ITEM</th>
-                <th>DATE</th>
-                <th>AMOUNT</th>
+                <td>@item.EventSurgery</td>
+                <td>@item.EventLocation</td>
+                <td>@item.EventDate</td>
+
+
+
+
             </tr>
-        </thead>
-        <tbody>
-            <?php
-            $no 	= 1;
-            $total 	= 0;
-            while ($row = mysqli_fetch_array($query))
-            {
-            $amount  = $row['amount'] == 0 ? '' : number_format($row['amount']);
-            echo '
-            <tr>
-                <td>'.$no.'</td>
-                <td>'.$row['name'].'</td>
-                <td>'.$row['item'].'</td>
-                <td>'. date('F d, Y', strtotime($row['date'])) . '</td>
-                <td>'.$amount.'</td>
-            </tr>';
-            $total += $row['amount'];
-            $no++;
-            }?>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="4">TOTAL</th>
-                <th><?=number_format($total)?></th>
-            </tr>
-        </tfoot>
-    </table>
-</body>
-</html>
+        }
+    </tbody>
+</table>
 
+
+
+
+<h1>Non-Clinical Volunteers</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td><b>First Name</b></td>
+            <td><b>Last Name</b></td>
+            <td><b>City</b></td>
+            <td><b>State</b></td>
+            <td><b>Address</b></td>
+            <td><b>Postal Code</b></td>
+            <td><b>Mobile Phone</b></td>
+            <td><b>Email</b></td>
+            <td><b>Birthday</b></td>
+            <td><b>Preferred Name</b></td>
+            <td><b>Which Best Describes You?</b></td>
+            <td><b>Registration</b></td>
+            <td><b>Cleaning</b></td>
+            <td><b>Shadowing</b></td>
+            <td><b>Fundraising</b></td>
+            <td><b>Cleaning</b></td>
+            <td><b>What is your T-Shirt Size?</b></td>
+
+
+
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+
+        @foreach (var item in (ICollection<NonClinicalModel>)ViewBag.NonClinicals)
+        {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.City</td>
+            <td>@item.State</td>
+            <td>@item.Address</td>
+            <td>@item.PostalCode</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Email</td>
+            <td>@item.Birthday</td>
+            <td>@item.PreferredName</td>
+            <td>@item.BestDescription</td>
+            <td>@item.Registration</td>
+            <td>@item.Cleaning</td>
+            <td>@item.ClinicalShadowing</td>
+            <td>@item.Fundraising </td>
+            <td>@item.WhyInterested </td>
+            <td>@item.TShirtSize </td>
+
+
+
+
+        </tr>
+        }
+    </tbody>
+</table>
