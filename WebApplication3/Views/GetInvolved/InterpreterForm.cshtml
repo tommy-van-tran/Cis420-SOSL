@@ -16,7 +16,7 @@
     </span>
 </div>
 <br />
-
+<div style="padding-left:5vw">
     <label>First Name</label>
     <div>
         @Html.TextBoxFor(Model => Model.FirstName)
@@ -65,14 +65,12 @@
 
 
     <label>What/Which Language(s) can you interpret for?</label>
-    <div style="height:10vw;width:12vw;border:1px solid #ccc;overflow:auto;">
+    <div style="height:10vw;width:12vw; solid #ccc;overflow:auto;">
         <div>@Html.CheckBoxFor(Model => Model.Spanish)<label>Spanish</label></div>
         <div>@Html.CheckBoxFor(Model => Model.Hindi)<label>Hindi</label></div>
         <div>@Html.CheckBoxFor(Model => Model.Arabic)<label>Arabic</label></div>
         <div>@Html.CheckBoxFor(Model => Model.Other)<label>Other</label></div>
     </div>
-
-
 </div>
 <br />
 <div style="padding-left:5vw; padding-right:5vw"><input type="submit" name="commit" value="Submit" class="btn btn btn-dark btn-lg" data-disable-with="Saving..." /></div>
