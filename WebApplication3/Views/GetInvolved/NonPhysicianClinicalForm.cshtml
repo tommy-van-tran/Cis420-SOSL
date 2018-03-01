@@ -3,7 +3,7 @@
     ViewBag.Title = "NonPhysicianClinicalForm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@using (Html.BeginForm("NonPhysician", "GetInvolved", FormMethod.Post))
+@using (Html.BeginForm("NonPhysicianClinical", "GetInvolved", FormMethod.Post))
 
 {<br />
     <h2 style="color:crimson; padding-left:5vw; padding-right:5vw">Non-Physician Clinical Volunteer Form</h2>
@@ -190,7 +190,7 @@ new List<Object>{
                                 </div>
                                 <label>Professional license Number</label>
                                 <div>
-                                    @Html.TextBoxFor(Model => Model.LicenseNumber)
+                                    @Html.TextBoxFor(Model => Model.ProfessionalLicenseNumber)
                                 </div>
 
                                 <div class="control_row">
@@ -208,16 +208,16 @@ new List<Object>{
                                 <label>What is your T-Shirt Size?</label>
                                 <div>
                                     @Html.DropDownListFor(model => Model.TShirtSize, new SelectList(
-                                                    new List<Object>{
+                         new List<Object>{
                                                                                      new { value = 0, text = "S"  },
                                                                                      new { value = 1 , text = "M" },
                                                                                      new { value = 2 , text = "L"},
                                                                                      new { value = 3, text = "XL"},
                                                                                      new {value = 4, text = "2XL"}
-                                                    },
-                                                   "value",
-                                                   "text",
-                                                    0))
+                         },
+                        "value",
+                        "text",
+                         0))
                                 </div>
 
                                 <br />
@@ -229,6 +229,7 @@ new List<Object>{
             </div>
         </div>
     </body>
+}
 
 
 
